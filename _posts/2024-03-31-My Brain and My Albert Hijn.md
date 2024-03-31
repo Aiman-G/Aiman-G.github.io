@@ -57,3 +57,6 @@ Subconscious is the where the new prespctive comes from. [Richard Hamming](https
 How can this be creative? In my opinion, ideas that reside in our subconscious are difficult to change. However, from personal experience, Richard Hamming's idea resonates with me.
 It seems to me that emotional investment in a problem keeps the subconscious stimulated, preventing ideas from resting there.
 How to keep an AI model stimulated?, or how to make an emotional AI ?
+
+
+TBC...
