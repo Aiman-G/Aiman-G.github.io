@@ -48,4 +48,12 @@ In this context, I imagine the parameters of an AI model as neurons ( after all 
 There are electrical pulses that connect these neurons randomly to create new ideas.
 Serendipity would be equivalent to retraining the model or finding a way to change connections between neurons (messing with model parameters).
 
+<div align="left">
+ <h3> Subconscious</h3> 
+</div>
 
+Subconscious is the where the new prespctive comes from. [Richard Hamming](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) recommends us to invist emotionaly in a problem.Because, when you invest emotional, your subconscious will work on it, while you are sleeping or doing any other activties. Subconscious works when conscious stops working.
+ My thinking:  getting a new idea ingraned in your brain, it will become a second nature, then you brain won't even bother thinking about it, it will rest in your subconscious.
+How can this be creative? In my opinion, ideas that reside in our subconscious are difficult to change. However, from personal experience, Richard Hamming's idea resonates with me.
+It seems to me that emotional investment in a problem keeps the subconscious stimulated, preventing ideas from resting there.
+How to keep an AI model stimulated?
