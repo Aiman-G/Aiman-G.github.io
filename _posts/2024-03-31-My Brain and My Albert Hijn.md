@@ -40,7 +40,7 @@ Sometimes, I think of death as a state of mind, the final state of mind that bec
  <h3> AI and Perspectives</h3> 
 </div>
 
-What I have explained above, to me,  is akin to training an AI model on data, and after decades and then using the same model for decades without retraining it.
+What I have explained above, to me,  is akin to training an AI model on data, then using the same model for decades without retraining it.
 Creativity is nothing but old ideas that combined together to form a new one.
 Go and watch any fantasy, anime, fiction movie. Look at those new creatures in the movie, if you disassemble any creature into its small parts, those parts are old, and well know for us. 
 But combining those parts into a new one, created a new thing. 
@@ -56,4 +56,4 @@ Subconscious is the where the new prespctive comes from. [Richard Hamming](https
  My thinking:  getting a new idea ingraned in your brain, it will become a second nature, then you brain won't even bother thinking about it, it will rest in your subconscious.
 How can this be creative? In my opinion, ideas that reside in our subconscious are difficult to change. However, from personal experience, Richard Hamming's idea resonates with me.
 It seems to me that emotional investment in a problem keeps the subconscious stimulated, preventing ideas from resting there.
-How to keep an AI model stimulated?
+How to keep an AI model stimulated?, or how to make an emotional AI ?
