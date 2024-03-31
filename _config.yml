@@ -19,7 +19,7 @@ linkedin_username: "linkedinuser"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 
-theme: jekyll-theme-slate
+theme: minima
 rss: rss
 
 kramdown:
