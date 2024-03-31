@@ -40,9 +40,8 @@ Sometimes, I think of death as a state of mind, the final state of mind that bec
  <h3> AI and Perspectives</h3> 
 </div>
 
-What I have explained above, to me ,  is akin to training an AI model on data, and after decades and then using the same model for decades without retraining it.. 
-Can AI has  moments of serendipity ?
-You see , creativity is nothing but old ideas that combined together to form a new one.
+What I have explained above, to me,  is akin to training an AI model on data, and after decades and then using the same model for decades without retraining it.
+Creativity is nothing but old ideas that combined together to form a new one.
 Go and watch any fantasy, anime, fiction movie. Look at those new creatures in the movie, if you disassemble any creature into its small parts, those parts are old, and well know for us. 
 But combining those parts into a new one, created a new thing. 
 In this context, I imagine the parameters of an AI model as neurons ( after all this is my brain frame, assuming it’s a deep learning model built with neural networks). 
