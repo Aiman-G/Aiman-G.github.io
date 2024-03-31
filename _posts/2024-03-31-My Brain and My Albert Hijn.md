@@ -15,7 +15,7 @@ At my Albert Heijn, I know every face. I have even started saying 'fijne avond' 
 In another country, one hour from here near Amsterdam Central Station, they have an Albert Heijn in a historic building. You won't believe your eyes when you enter that place; it's as if you're at the entrance of a museum. You can smell the history, the stones, and, of course, the bread. The good thing is that the interior is not as wide and open as my Albert Heijn, it is terrible. Only two people can barely walk inside. But the entrance makes me jealous.
 In my resident permit, there is no mention of Albert Heijn.
 
-<div align="center">
+<div align="left">
  <h3> New Perspectives</h3> 
 </div>
 
@@ -36,7 +36,7 @@ But why do we need a new perspective? To break free from the boring life. It's t
 and it's entirely possible to spend it trapped in a frame that we unknowingly cultivated at some point.
 Sometimes, I think of death as a state of mind, the final state of mind that becomes eternally attached to our souls. The last frame. 
 
-<div align="center">
+<div align="left">
  <h3> AI and Perspectives</h3> 
 </div>
 
