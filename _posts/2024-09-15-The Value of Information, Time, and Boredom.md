@@ -20,6 +20,21 @@ Why do ghosts love dwelling in dark caves?
 
 Why does Grandma keep telling me, "Solitude is a kingdom," when I'm not a prince?
 
+<div class="flex-container">
+        <div class="flex-item">
+            <img src="/images/thabab1.jpg" alt="Image 1">
+        </div>
+        <div class="flex-item">
+            <img src="thabab2.jpg" alt="Image 2">
+        </div>
+        <div class="flex-item">
+            <img src="thabab3.jpg" alt="Image 3">
+        </div>
+        <div class="flex-item">
+            <img src="thabab4.jpg" alt="Image 4">
+        </div>
+    </div>
+
 
 ...
 
