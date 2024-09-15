@@ -50,4 +50,14 @@ hr {
     justify-content: space-between; /* Distribute space between images */
     max-width: 800px; /* Restrict the total width */
     margin: 0 auto; /* Center the container */
+}.flex-item {
+    width: 48%; /* Two images per row with some gap */
+    margin-bottom: 10px; /* Add space between rows */
+}
+
+.flex-item img {
+    width: 100%; /* Make sure images fill the item */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
