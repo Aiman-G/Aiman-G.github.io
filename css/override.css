@@ -43,21 +43,30 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Distribute space between images */
-    max-width: 800px; /* Restrict the total width */
-    margin: 0 auto; /* Center the container */
-}.flex-item {
-    width: 48%; /* Two images per row with some gap */
-    margin-bottom: 10px; /* Add space between rows */
+    flex-wrap: wrap;  /* Allow the items to wrap to the next row */
+    justify-content: space-between;  /* Spread items evenly with space between */
+    max-width: 1000px;  /* Set max width to prevent images from being too large */
+    margin: 0 auto;  /* Center the flex container on the page */
+    gap: 10px; /* Add some space between items */
+}
+
+.flex-item {
+    width: calc(50% - 10px);  /* Each item will take 50% of the container width, minus the gap */
+    box-sizing: border-box;  /* Ensure padding and borders are included in the element's total width */
 }
 
 .flex-item img {
-    width: 100%; /* Make sure images fill the item */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;  /* Ensure the image fills the flex item */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;  /* Add a slight rounding of the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a light shadow for some depth */
 }
