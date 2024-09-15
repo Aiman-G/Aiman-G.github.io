@@ -52,3 +52,6 @@ I believe that bored people produced many of the great ideas we have today, and 
 Perhaps it is good to let AI take on this role—we are no longer fit for it. 
 
 **Final note:** I decided to be bored for a few minutes today; that is why...
+
+
+- Aiman
