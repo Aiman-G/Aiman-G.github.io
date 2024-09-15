@@ -4,10 +4,15 @@ I concluded that they must visit a melody shop, just like the one beside our sch
 And someday, melodies might be sold out, and no one will find music for their lyrics. No more beautiful songs.
 
 What is the meaning behind the names of everyone I know in the village? 
+
 Do people become afraid of death as they grow old? 
+
 What lies beyond those distant mountains? What kind of creatures live there? 
+
 Why do ghosts love dwelling in dark caves? 
+
 Why does Grandma keep telling me, "Solitude is a sultanate," when I'm not a prince?
+
 
 ...
 
