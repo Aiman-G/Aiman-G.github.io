@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "skyblue", "font": {"color": "red"}, "id": "l", "label": "l", "shape": "dot", "title": "Initial: l"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ou", "label": "ou", "shape": "dot", "title": "Final: ou"}, {"color": "skyblue", "font": {"color": "red"}, "id": "y", "label": "y", "shape": "dot", "title": "Initial: y"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "i", "label": "i", "shape": "dot", "title": "Final: i"}, {"color": "skyblue", "font": {"color": "red"}, "id": "c", "label": "c", "shape": "dot", "title": "Initial: c"}, {"color": "skyblue", "font": {"color": "red"}, "id": "k", "label": "k", "shape": "dot", "title": "Initial: k"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "an", "label": "an", "shape": "dot", "title": "Final: an"}, {"color": "skyblue", "font": {"color": "red"}, "id": "p", "label": "p", "shape": "dot", "title": "Initial: p"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ie", "label": "ie", "shape": "dot", "title": "Final: ie"}, {"color": "skyblue", "font": {"color": "red"}, "id": "z", "label": "z", "shape": "dot", "title": "Initial: z"}, {"color": "skyblue", "font": {"color": "red"}, "id": "s", "label": "s", "shape": "dot", "title": "Initial: s"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ang", "label": "ang", "shape": "dot", "title": "Final: ang"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "uan", "label": "uan", "shape": "dot", "title": "Final: uan"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "eng", "label": "eng", "shape": "dot", "title": "Final: eng"}, {"color": "skyblue", "font": {"color": "red"}, "id": "x", "label": "x", "shape": "dot", "title": "Initial: x"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ue", "label": "ue", "shape": "dot", "title": "Final: ue"}, {"color": "skyblue", "font": {"color": "red"}, "id": "a", "label": "a", "shape": "dot", "title": "Initial: a"}, {"color": "skyblue", "font": {"color": "red"}, "id": "d", "label": "d", "shape": "dot", "title": "Initial: d"}, {"color": "skyblue", "font": {"color": "red"}, "id": "t", "label": "t", "shape": "dot", "title": "Initial: t"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ui", "label": "ui", "shape": "dot", "title": "Final: ui"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ing", "label": "ing", "shape": "dot", "title": "Final: ing"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "u", "label": "u", "shape": "dot", "title": "Final: u"}, {"color": "skyblue", "font": {"color": "red"}, "id": "f", "label": "f", "shape": "dot", "title": "Initial: f"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "en", "label": "en", "shape": "dot", "title": "Final: en"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ai", "label": "ai", "shape": "dot", "title": "Final: ai"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "iao", "label": "iao", "shape": "dot", "title": "Final: iao"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ia", "label": "ia", "shape": "dot", "title": "Final: ia"}, {"color": "skyblue", "font": {"color": "red"}, "id": "q", "label": "q", "shape": "dot", "title": "Initial: q"}, {"color": "skyblue", "font": {"color": "red"}, "id": "w", "label": "w", "shape": "dot", "title": "Initial: w"}, {"color": "skyblue", "font": {"color": "red"}, "id": "j", "label": "j", "shape": "dot", "title": "Initial: j"}, {"color": "skyblue", "font": {"color": "red"}, "id": "h", "label": "h", "shape": "dot", "title": "Initial: h"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ua", "label": "ua", "shape": "dot", "title": "Final: ua"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ian", "label": "ian", "shape": "dot", "title": "Final: ian"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "uo", "label": "uo", "shape": "dot", "title": "Final: uo"}, {"color": "skyblue", "font": {"color": "red"}, "id": "g", "label": "g", "shape": "dot", "title": "Initial: g"}, {"color": "skyblue", "font": {"color": "red"}, "id": "e", "label": "e", "shape": "dot", "title": "Initial: e"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "iang", "label": "iang", "shape": "dot", "title": "Final: iang"}, {"color": "skyblue", "font": {"color": "red"}, "id": "m", "label": "m", "shape": "dot", "title": "Initial: m"}, {"color": "skyblue", "font": {"color": "red"}, "id": "b", "label": "b", "shape": "dot", "title": "Initial: b"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "un", "label": "un", "shape": "dot", "title": "Final: un"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ong", "label": "ong", "shape": "dot", "title": "Final: ong"}, {"color": "skyblue", "font": {"color": "red"}, "id": "n", "label": "n", "shape": "dot", "title": "Initial: n"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "in", "label": "in", "shape": "dot", "title": "Final: in"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "iu", "label": "iu", "shape": "dot", "title": "Final: iu"}, {"color": "skyblue", "font": {"color": "red"}, "id": "o", "label": "o", "shape": "dot", "title": "Initial: o"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ei", "label": "ei", "shape": "dot", "title": "Final: ei"}, {"color": "skyblue", "font": {"color": "red"}, "id": "r", "label": "r", "shape": "dot", "title": "Initial: r"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ao", "label": "ao", "shape": "dot", "title": "Final: ao"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "uang", "label": "uang", "shape": "dot", "title": "Final: uang"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "ve", "label": "ve", "shape": "dot", "title": "Final: ve"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "uai", "label": "uai", "shape": "dot", "title": "Final: uai"}, {"color": "lightgreen", "font": {"color": "red"}, "id": "v", "label": "v", "shape": "dot", "title": "Final: v"}]);
+                  edges = new vis.DataSet([{"from": "l", "title": "Weight: 17", "to": "ou", "value": 17}, {"from": "l", "title": "Weight: 15", "to": "ai", "value": 15}, {"from": "l", "title": "Weight: 28", "to": "uo", "value": 28}, {"from": "l", "title": "Weight: 68", "to": "i", "value": 68}, {"from": "l", "title": "Weight: 14", "to": "in", "value": 14}, {"from": "l", "title": "Weight: 10", "to": "uan", "value": 10}, {"from": "l", "title": "Weight: 6", "to": "iao", "value": 6}, {"from": "l", "title": "Weight: 13", "to": "un", "value": 13}, {"from": "l", "title": "Weight: 46", "to": "iu", "value": 46}, {"from": "l", "title": "Weight: 17", "to": "iang", "value": 17}, {"from": "l", "title": "Weight: 9", "to": "ong", "value": 9}, {"from": "l", "title": "Weight: 28", "to": "ian", "value": 28}, {"from": "l", "title": "Weight: 12", "to": "ve", "value": 12}, {"from": "l", "title": "Weight: 16", "to": "an", "value": 16}, {"from": "l", "title": "Weight: 7", "to": "eng", "value": 7}, {"from": "l", "title": "Weight: 20", "to": "ing", "value": 20}, {"from": "l", "title": "Weight: 17", "to": "ie", "value": 17}, {"from": "l", "title": "Weight: 12", "to": "ao", "value": 12}, {"from": "l", "title": "Weight: 7", "to": "ei", "value": 7}, {"from": "l", "title": "Weight: 5", "to": "e", "value": 5}, {"from": "l", "title": "Weight: 11", "to": "v", "value": 11}, {"from": "l", "title": "Weight: 23", "to": "u", "value": 23}, {"from": "l", "title": "Weight: 7", "to": "a", "value": 7}, {"from": "ou", "title": "Weight: 85", "to": "s", "value": 85}, {"from": "ou", "title": "Weight: 46", "to": "y", "value": 46}, {"from": "ou", "title": "Weight: 20", "to": "c", "value": 20}, {"from": "ou", "title": "Weight: 12", "to": "h", "value": 12}, {"from": "ou", "title": "Weight: 40", "to": "t", "value": 40}, {"from": "ou", "title": "Weight: 19", "to": "k", "value": 19}, {"from": "ou", "title": "Weight: 11", "to": "d", "value": 11}, {"from": "ou", "title": "Weight: 33", "to": "z", "value": 33}, {"from": "ou", "title": "Weight: 16", "to": "g", "value": 16}, {"from": "ou", "title": "Weight: 6", "to": "r", "value": 6}, {"from": "y", "title": "Weight: 83", "to": "i", "value": 83}, {"from": "y", "title": "Weight: 47", "to": "ing", "value": 47}, {"from": "y", "title": "Weight: 69", "to": "an", "value": 69}, {"from": "y", "title": "Weight: 78", "to": "u", "value": 78}, {"from": "y", "title": "Weight: 32", "to": "ue", "value": 32}, {"from": "y", "title": "Weight: 26", "to": "uan", "value": 26}, {"from": "y", "title": "Weight: 22", "to": "ang", "value": 22}, {"from": "y", "title": "Weight: 46", "to": "ong", "value": 46}, {"from": "y", "title": "Weight: 37", "to": "in", "value": 37}, {"from": "y", "title": "Weight: 28", "to": "un", "value": 28}, {"from": "y", "title": "Weight: 29", "to": "a", "value": 29}, {"from": "y", "title": "Weight: 26", "to": "ao", "value": 26}, {"from": "y", "title": "Weight: 7", "to": "e", "value": 7}, {"from": "i", "title": "Weight: 49", "to": "c", "value": 49}, {"from": "i", "title": "Weight: 142", "to": "z", "value": 142}, {"from": "i", "title": "Weight: 75", "to": "x", "value": 75}, {"from": "i", "title": "Weight: 190", "to": "s", "value": 190}, {"from": "i", "title": "Weight: 111", "to": "q", "value": 111}, {"from": "i", "title": "Weight: 37", "to": "t", "value": 37}, {"from": "i", "title": "Weight: 118", "to": "j", "value": 118}, {"from": "i", "title": "Weight: 39", "to": "d", "value": 39}, {"from": "i", "title": "Weight: 33", "to": "b", "value": 33}, {"from": "i", "title": "Weight: 7", "to": "p", "value": 7}, {"from": "i", "title": "Weight: 15", "to": "m", "value": 15}, {"from": "i", "title": "Weight: 15", "to": "n", "value": 15}, {"from": "c", "title": "Weight: 38", "to": "uan", "value": 38}, {"from": "c", "title": "Weight: 16", "to": "ai", "value": 16}, {"from": "c", "title": "Weight: 20", "to": "ui", "value": 20}, {"from": "c", "title": "Weight: 19", "to": "en", "value": 19}, {"from": "c", "title": "Weight: 28", "to": "e", "value": 28}, {"from": "c", "title": "Weight: 69", "to": "eng", "value": 69}, {"from": "c", "title": "Weight: 27", "to": "ao", "value": 27}, {"from": "c", "title": "Weight: 159", "to": "u", "value": 159}, {"from": "c", "title": "Weight: 46", "to": "a", "value": 46}, {"from": "c", "title": "Weight: 23", "to": "an", "value": 23}, {"from": "c", "title": "Weight: 43", "to": "ong", "value": 43}, {"from": "c", "title": "Weight: 34", "to": "ang", "value": 34}, {"from": "c", "title": "Weight: 15", "to": "un", "value": 15}, {"from": "c", "title": "Weight: 14", "to": "uo", "value": 14}, {"from": "c", "title": "Weight: 8", "to": "uang", "value": 8}, {"from": "k", "title": "Weight: 27", "to": "an", "value": 27}, {"from": "k", "title": "Weight: 11", "to": "ui", "value": 11}, {"from": "k", "title": "Weight: 15", "to": "uan", "value": 15}, {"from": "k", "title": "Weight: 18", "to": "e", "value": 18}, {"from": "k", "title": "Weight: 12", "to": "ao", "value": 12}, {"from": "k", "title": "Weight: 7", "to": "u", "value": 7}, {"from": "k", "title": "Weight: 46", "to": "ai", "value": 46}, {"from": "k", "title": "Weight: 8", "to": "uai", "value": 8}, {"from": "k", "title": "Weight: 7", "to": "uo", "value": 7}, {"from": "k", "title": "Weight: 14", "to": "ong", "value": 14}, {"from": "k", "title": "Weight: 8", "to": "ang", "value": 8}, {"from": "k", "title": "Weight: 13", "to": "ua", "value": 13}, {"from": "k", "title": "Weight: 5", "to": "uang", "value": 5}, {"from": "an", "title": "Weight: 23", "to": "a", "value": 23}, {"from": "an", "title": "Weight: 23", "to": "w", "value": 23}, {"from": "an", "title": "Weight: 42", "to": "s", "value": 42}, {"from": "an", "title": "Weight: 12", "to": "r", "value": 12}, {"from": "an", "title": "Weight: 20", "to": "b", "value": 20}, {"from": "an", "title": "Weight: 48", "to": "z", "value": 48}, {"from": "an", "title": "Weight: 28", "to": "t", "value": 28}, {"from": "an", "title": "Weight: 56", "to": "f", "value": 56}, {"from": "an", "title": "Weight: 28", "to": "m", "value": 28}, {"from": "an", "title": "Weight: 24", "to": "d", "value": 24}, {"from": "an", "title": "Weight: 19", "to": "p", "value": 19}, {"from": "an", "title": "Weight: 9", "to": "h", "value": 9}, {"from": "an", "title": "Weight: 29", "to": "g", "value": 29}, {"from": "p", "title": "Weight: 11", "to": "u", "value": 11}, {"from": "p", "title": "Weight: 20", "to": "ei", "value": 20}, {"from": "p", "title": "Weight: 20", "to": "ao", "value": 20}, {"from": "p", "title": "Weight: 16", "to": "ian", "value": 16}, {"from": "p", "title": "Weight: 18", "to": "ing", "value": 18}, {"from": "p", "title": "Weight: 25", "to": "ai", "value": 25}, {"from": "p", "title": "Weight: 18", "to": "o", "value": 18}, {"from": "p", "title": "Weight: 10", "to": "iao", "value": 10}, {"from": "p", "title": "Weight: 5", "to": "in", "value": 5}, {"from": "p", "title": "Weight: 8", "to": "en", "value": 8}, {"from": "p", "title": "Weight: 7", "to": "a", "value": 7}, {"from": "p", "title": "Weight: 8", "to": "eng", "value": 8}, {"from": "ie", "title": "Weight: 9", "to": "d", "value": 9}, {"from": "ie", "title": "Weight: 50", "to": "x", "value": 50}, {"from": "ie", "title": "Weight: 117", "to": "j", "value": 117}, {"from": "ie", "title": "Weight: 11", "to": "q", "value": 11}, {"from": "ie", "title": "Weight: 7", "to": "m", "value": 7}, {"from": "z", "title": "Weight: 30", "to": "ang", "value": 30}, {"from": "z", "title": "Weight: 30", "to": "ai", "value": 30}, {"from": "z", "title": "Weight: 20", "to": "en", "value": 20}, {"from": "z", "title": "Weight: 116", "to": "u", "value": 116}, {"from": "z", "title": "Weight: 19", "to": "un", "value": 19}, {"from": "z", "title": "Weight: 49", "to": "ong", "value": 49}, {"from": "z", "title": "Weight: 44", "to": "uan", "value": 44}, {"from": "z", "title": "Weight: 65", "to": "eng", "value": 65}, {"from": "z", "title": "Weight: 55", "to": "uo", "value": 55}, {"from": "z", "title": "Weight: 25", "to": "ui", "value": 25}, {"from": "z", "title": "Weight: 57", "to": "ao", "value": 57}, {"from": "z", "title": "Weight: 27", "to": "uang", "value": 27}, {"from": "z", "title": "Weight: 37", "to": "e", "value": 37}, {"from": "z", "title": "Weight: 23", "to": "a", "value": 23}, {"from": "z", "title": "Weight: 7", "to": "ua", "value": 7}, {"from": "s", "title": "Weight: 46", "to": "ang", "value": 46}, {"from": "s", "title": "Weight: 45", "to": "eng", "value": 45}, {"from": "s", "title": "Weight: 70", "to": "u", "value": 70}, {"from": "s", "title": "Weight: 37", "to": "ui", "value": 37}, {"from": "s", "title": "Weight: 9", "to": "un", "value": 9}, {"from": "s", "title": "Weight: 37", "to": "ao", "value": 37}, {"from": "s", "title": "Weight: 27", "to": "ong", "value": 27}, {"from": "s", "title": "Weight: 43", "to": "en", "value": 43}, {"from": "s", "title": "Weight: 41", "to": "e", "value": 41}, {"from": "s", "title": "Weight: 5", "to": "ua", "value": 5}, {"from": "s", "title": "Weight: 17", "to": "a", "value": 17}, {"from": "s", "title": "Weight: 41", "to": "uo", "value": 41}, {"from": "s", "title": "Weight: 14", "to": "uan", "value": 14}, {"from": "s", "title": "Weight: 7", "to": "ai", "value": 7}, {"from": "s", "title": "Weight: 15", "to": "uai", "value": 15}, {"from": "ang", "title": "Weight: 22", "to": "d", "value": 22}, {"from": "ang", "title": "Weight: 23", "to": "w", "value": 23}, {"from": "ang", "title": "Weight: 50", "to": "f", "value": 50}, {"from": "ang", "title": "Weight: 9", "to": "h", "value": 9}, {"from": "ang", "title": "Weight: 9", "to": "r", "value": 9}, {"from": "ang", "title": "Weight: 5", "to": "b", "value": 5}, {"from": "uan", "title": "Weight: 18", "to": "d", "value": 18}, {"from": "uan", "title": "Weight: 42", "to": "h", "value": 42}, {"from": "uan", "title": "Weight: 25", "to": "g", "value": 25}, {"from": "uan", "title": "Weight: 42", "to": "x", "value": 42}, {"from": "uan", "title": "Weight: 14", "to": "q", "value": 14}, {"from": "uan", "title": "Weight: 13", "to": "j", "value": 13}, {"from": "eng", "title": "Weight: 17", "to": "f", "value": 17}, {"from": "eng", "title": "Weight: 18", "to": "d", "value": 18}, {"from": "eng", "title": "Weight: 28", "to": "m", "value": 28}, {"from": "eng", "title": "Weight: 8", "to": "h", "value": 8}, {"from": "eng", "title": "Weight: 6", "to": "t", "value": 6}, {"from": "eng", "title": "Weight: 8", "to": "b", "value": 8}, {"from": "x", "title": "Weight: 16", "to": "ue", "value": 16}, {"from": "x", "title": "Weight: 53", "to": "ia", "value": 53}, {"from": "x", "title": "Weight: 60", "to": "ian", "value": 60}, {"from": "x", "title": "Weight: 71", "to": "iang", "value": 71}, {"from": "x", "title": "Weight: 18", "to": "in", "value": 18}, {"from": "x", "title": "Weight: 49", "to": "ing", "value": 49}, {"from": "x", "title": "Weight: 45", "to": "iao", "value": 45}, {"from": "x", "title": "Weight: 20", "to": "iu", "value": 20}, {"from": "x", "title": "Weight: 35", "to": "un", "value": 35}, {"from": "x", "title": "Weight: 27", "to": "u", "value": 27}, {"from": "ue", "title": "Weight: 33", "to": "j", "value": 33}, {"from": "ue", "title": "Weight: 16", "to": "q", "value": 16}, {"from": "a", "title": "Weight: 7", "to": "m", "value": 7}, {"from": "a", "title": "Weight: 72", "to": "f", "value": 72}, {"from": "a", "title": "Weight: 71", "to": "d", "value": 71}, {"from": "a", "title": "Weight: 6", "to": "t", "value": 6}, {"from": "a", "title": "Weight: 14", "to": "ai", "value": 14}, {"from": "a", "title": "Weight: 8", "to": "n", "value": 8}, {"from": "a", "title": "Weight: 8", "to": "b", "value": 8}, {"from": "a", "title": "Weight: 7", "to": "w", "value": 7}, {"from": "d", "title": "Weight: 38", "to": "iao", "value": 38}, {"from": "d", "title": "Weight: 28", "to": "u", "value": 28}, {"from": "d", "title": "Weight: 5", "to": "iu", "value": 5}, {"from": "d", "title": "Weight: 81", "to": "ao", "value": 81}, {"from": "d", "title": "Weight: 33", "to": "ai", "value": 33}, {"from": "d", "title": "Weight: 61", "to": "ong", "value": 61}, {"from": "d", "title": "Weight: 30", "to": "ing", "value": 30}, {"from": "d", "title": "Weight: 16", "to": "e", "value": 16}, {"from": "d", "title": "Weight: 8", "to": "un", "value": 8}, {"from": "d", "title": "Weight: 18", "to": "ian", "value": 18}, {"from": "d", "title": "Weight: 22", "to": "ui", "value": 22}, {"from": "d", "title": "Weight: 21", "to": "uo", "value": 21}, {"from": "t", "title": "Weight: 41", "to": "ui", "value": 41}, {"from": "t", "title": "Weight: 41", "to": "ong", "value": 41}, {"from": "t", "title": "Weight: 24", "to": "ao", "value": 24}, {"from": "t", "title": "Weight: 31", "to": "uo", "value": 31}, {"from": "t", "title": "Weight: 23", "to": "u", "value": 23}, {"from": "t", "title": "Weight: 38", "to": "ing", "value": 38}, {"from": "t", "title": "Weight: 33", "to": "iao", "value": 33}, {"from": "t", "title": "Weight: 10", "to": "ian", "value": 10}, {"from": "t", "title": "Weight: 5", "to": "un", "value": 5}, {"from": "t", "title": "Weight: 5", "to": "ai", "value": 5}, {"from": "ui", "title": "Weight: 22", "to": "g", "value": 22}, {"from": "ui", "title": "Weight: 87", "to": "h", "value": 87}, {"from": "ing", "title": "Weight: 54", "to": "q", "value": 54}, {"from": "ing", "title": "Weight: 37", "to": "j", "value": 37}, {"from": "ing", "title": "Weight: 34", "to": "m", "value": 34}, {"from": "ing", "title": "Weight: 11", "to": "b", "value": 11}, {"from": "ing", "title": "Weight: 10", "to": "n", "value": 10}, {"from": "u", "title": "Weight: 29", "to": "w", "value": 29}, {"from": "u", "title": "Weight: 50", "to": "b", "value": 50}, {"from": "u", "title": "Weight: 101", "to": "f", "value": 101}, {"from": "u", "title": "Weight: 32", "to": "g", "value": 32}, {"from": "u", "title": "Weight: 43", "to": "j", "value": 43}, {"from": "u", "title": "Weight: 36", "to": "h", "value": 36}, {"from": "u", "title": "Weight: 43", "to": "r", "value": 43}, {"from": "u", "title": "Weight: 84", "to": "q", "value": 84}, {"from": "u", "title": "Weight: 11", "to": "n", "value": 11}, {"from": "u", "title": "Weight: 9", "to": "m", "value": 9}, {"from": "f", "title": "Weight: 41", "to": "en", "value": 41}, {"from": "f", "title": "Weight: 33", "to": "ei", "value": 33}, {"from": "en", "title": "Weight: 28", "to": "r", "value": 28}, {"from": "en", "title": "Weight: 23", "to": "w", "value": 23}, {"from": "en", "title": "Weight: 8", "to": "h", "value": 8}, {"from": "en", "title": "Weight: 11", "to": "b", "value": 11}, {"from": "ai", "title": "Weight: 33", "to": "m", "value": 33}, {"from": "ai", "title": "Weight: 16", "to": "h", "value": 16}, {"from": "ai", "title": "Weight: 27", "to": "g", "value": 27}, {"from": "ai", "title": "Weight: 19", "to": "b", "value": 19}, {"from": "ai", "title": "Weight: 7", "to": "w", "value": 7}, {"from": "iao", "title": "Weight: 65", "to": "j", "value": 65}, {"from": "iao", "title": "Weight: 11", "to": "b", "value": 11}, {"from": "iao", "title": "Weight: 8", "to": "q", "value": 8}, {"from": "iao", "title": "Weight: 6", "to": "m", "value": 6}, {"from": "ia", "title": "Weight: 59", "to": "j", "value": 59}, {"from": "q", "title": "Weight: 38", "to": "ian", "value": 38}, {"from": "q", "title": "Weight: 16", "to": "iu", "value": 16}, {"from": "q", "title": "Weight: 18", "to": "in", "value": 18}, {"from": "q", "title": "Weight: 22", "to": "iang", "value": 22}, {"from": "w", "title": "Weight: 70", "to": "ei", "value": 70}, {"from": "w", "title": "Weight: 7", "to": "o", "value": 7}, {"from": "j", "title": "Weight: 23", "to": "iang", "value": 23}, {"from": "j", "title": "Weight: 91", "to": "in", "value": 91}, {"from": "j", "title": "Weight: 28", "to": "iu", "value": 28}, {"from": "j", "title": "Weight: 71", "to": "ian", "value": 71}, {"from": "h", "title": "Weight: 71", "to": "ua", "value": 71}, {"from": "h", "title": "Weight: 47", "to": "e", "value": 47}, {"from": "h", "title": "Weight: 34", "to": "uo", "value": 34}, {"from": "h", "title": "Weight: 18", "to": "un", "value": 18}, {"from": "h", "title": "Weight: 14", "to": "ao", "value": 14}, {"from": "h", "title": "Weight: 7", "to": "ong", "value": 7}, {"from": "h", "title": "Weight: 14", "to": "uai", "value": 14}, {"from": "h", "title": "Weight: 7", "to": "uang", "value": 7}, {"from": "ua", "title": "Weight: 6", "to": "g", "value": 6}, {"from": "ian", "title": "Weight: 62", "to": "b", "value": 62}, {"from": "ian", "title": "Weight: 17", "to": "m", "value": 17}, {"from": "ian", "title": "Weight: 11", "to": "n", "value": 11}, {"from": "uo", "title": "Weight: 46", "to": "g", "value": 46}, {"from": "g", "title": "Weight: 35", "to": "ong", "value": 35}, {"from": "g", "title": "Weight: 14", "to": "ei", "value": 14}, {"from": "g", "title": "Weight: 18", "to": "e", "value": 18}, {"from": "g", "title": "Weight: 14", "to": "uang", "value": 14}, {"from": "g", "title": "Weight: 22", "to": "ao", "value": 22}, {"from": "g", "title": "Weight: 5", "to": "uai", "value": 5}, {"from": "e", "title": "Weight: 10", "to": "r", "value": 10}, {"from": "e", "title": "Weight: 13", "to": "e", "value": 13}, {"from": "m", "title": "Weight: 35", "to": "o", "value": 35}, {"from": "m", "title": "Weight: 8", "to": "ao", "value": 8}, {"from": "m", "title": "Weight: 6", "to": "ei", "value": 6}, {"from": "b", "title": "Weight: 22", "to": "o", "value": 22}, {"from": "b", "title": "Weight: 65", "to": "ao", "value": 65}, {"from": "b", "title": "Weight: 21", "to": "ei", "value": 21}, {"from": "ong", "title": "Weight: 27", "to": "n", "value": 27}, {"from": "ong", "title": "Weight: 16", "to": "r", "value": 16}, {"from": "n", "title": "Weight: 13", "to": "ao", "value": 13}, {"from": "n", "title": "Weight: 5", "to": "iu", "value": 5}, {"from": "r", "title": "Weight: 16", "to": "ao", "value": 16}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics",
+            "nodes",
+            "edges"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
