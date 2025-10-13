@@ -1,0 +1,138 @@
+baseURL = "https://YOUR_USERNAME.github.io/"
+title = "My Blog"
+enableRobotsTXT = true
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  defaultTheme = "auto"
+  showReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  showCodeCopyButtons = true
+  showPageNums = true
+  comments = false
+  displayFullLangName = true
+  description = "Thoughts, notes, and scatters."
+
+[languages]
+
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    weight = 1
+    title = "Aiman"
+    [languages.en.params]
+      description = "Thoughts, notes, and poems."
+      [languages.en.params.profileMode]
+        enabled = true
+        title = "Hi, I'm YOUR_NAME"
+        subtitle = "I write about tech, poetry, and more."
+        imageUrl = "logo.png"
+        imageTitle = "logo"
+        imageWidth = 120
+        imageHeight = 120
+
+    # English menu
+    [[languages.en.menu.main]]
+      name = "Posts"
+      pageRef = "posts"
+      weight = 10
+    [[languages.en.menu.main]]
+      name = "Tech"
+      url = "/categories/tech/"
+      weight = 15
+    [[languages.en.menu.main]]
+      name = "Others"
+      url = "/categories/others/"
+      weight = 16
+    [[languages.en.menu.main]]
+      name = "About"
+      pageRef = "about"
+      weight = 20
+
+  [languages.ar]
+    languageName = "العربية"
+    contentDir = "content/ar"
+    weight = 2
+    title = "أيمن"
+    languagedirection = "rtl"
+    [languages.ar.params]
+      description = "أفكار وملاحظات وقصائد."
+      [languages.ar.params.profileMode]
+        enabled = true
+        title = "مرحبا، أنا أيمن "
+        subtitle = "ستجد أشياء مبعثرة كثيرة هنا"
+        imageUrl = "logo.png"
+        imageTitle = "logo"
+        imageWidth = 120
+        imageHeight = 120
+
+    # Arabic menu
+    [[languages.ar.menu.main]]
+      name = "المقالات"
+      pageRef = "posts"
+      weight = 10
+    [[languages.ar.menu.main]]
+      name = "تقنية"
+      url = "/categories/tech/"
+      weight = 15
+    [[languages.ar.menu.main]]
+      name = "أخرى"
+      url = "/categories/others/"
+      weight = 16
+    [[languages.ar.menu.main]]
+      name = "حول"
+      pageRef = "about"
+      weight = 20
+
+  [languages.zh]
+    languageName = "简体中文"
+    languageCode = "zh-CN"
+    contentDir = "content/zh"
+    weight = 3
+    title = "艾曼"
+    [languages.zh.params]
+      description = "想法、笔记与诗歌。"
+      [languages.zh.params.profileMode]
+        enabled = true
+        title = "你好，我是 YOUR_NAME"
+        subtitle = "我写技术、诗歌与更多。"
+        imageUrl = "logo.png"
+        imageTitle = "logo"
+        imageWidth = 120
+        imageHeight = 120
+
+    # Chinese menu
+    [[languages.zh.menu.main]]
+      name = "文章"
+      pageRef = "posts"
+      weight = 10
+    [[languages.zh.menu.main]]
+      name = "技术"
+      url = "/categories/tech/"
+      weight = 15
+    [[languages.zh.menu.main]]
+      name = "杂项"
+      url = "/categories/others/"
+      weight = 16
+    [[languages.zh.menu.main]]
+      name = "关于"
+      pageRef = "about"
+      weight = 20

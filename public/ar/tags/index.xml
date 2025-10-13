@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on أيمن</title>
+    <link>http://localhost:1313/ar/tags/</link>
+    <description>Recent content in Tags on أيمن</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ar/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>مبعثرات</title>
+      <link>http://localhost:1313/ar/tags/%D9%85%D8%A8%D8%B9%D8%AB%D8%B1%D8%A7%D8%AA/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/tags/%D9%85%D8%A8%D8%B9%D8%AB%D8%B1%D8%A7%D8%AA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>مقدمة</title>
+      <link>http://localhost:1313/ar/tags/%D9%85%D9%82%D8%AF%D9%85%D8%A9/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/tags/%D9%85%D9%82%D8%AF%D9%85%D8%A9/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

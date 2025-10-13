@@ -1,0 +1,3 @@
+/* Example: small visual tweaks */
+:root { --primary: #3b82f6; }
+.post-content img { border-radius: 0.5rem; }

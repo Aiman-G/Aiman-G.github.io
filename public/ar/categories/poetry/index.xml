@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Poetry on مدونتي</title>
+    <link>http://localhost:1313/ar/categories/poetry/</link>
+    <description>Recent content in Poetry on مدونتي</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ar/categories/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>السلام</title>
+      <link>http://localhost:1313/ar/posts/something/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/posts/something/</guid>
+      <description>&lt;p&gt;Doblo una esquina&lt;br&gt;
+de una página quieta—&lt;br&gt;
+el viento hace el resto.ے&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
