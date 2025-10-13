@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tech on 艾尔曼</title>
+    <link>http://localhost:1313/zh/categories/tech/</link>
+    <description>Recent content in Tech on 艾尔曼</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, world</title>
+      <link>http://localhost:1313/zh/posts/hello/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/posts/hello/</guid>
+      <description>&lt;p&gt;Welcome to your multilingual blog. This is the chinese version.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

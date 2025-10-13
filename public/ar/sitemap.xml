@@ -35,6 +35,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/categories/others/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="ar"
                 href="http://localhost:1313/ar/categories/others/"
                 />
@@ -45,6 +50,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/posts/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -76,6 +86,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/categories/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/categories/tech/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -155,6 +170,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/posts/hello-world/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/posts/hello/"
                 />
     <xhtml:link
                 rel="alternate"

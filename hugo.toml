@@ -42,7 +42,7 @@ hasCJKLanguage = true
       description = "Thoughts, notes, and poems."
       [languages.en.params.profileMode]
         enabled = true
-        title = "Hi, I'm YOUR_NAME"
+        title = "Hi, I'm Aiman"
         subtitle = "I write about tech, poetry, and more."
         imageUrl = "logo.png"
         imageTitle = "logo"
@@ -107,12 +107,12 @@ hasCJKLanguage = true
     languageCode = "zh-CN"
     contentDir = "content/zh"
     weight = 3
-    title = "艾曼"
+    title = "艾尔曼"
     [languages.zh.params]
       description = "想法、笔记与诗歌。"
       [languages.zh.params.profileMode]
         enabled = true
-        title = "你好，我是 YOUR_NAME"
+        title = "你好，我是 艾尔曼"
         subtitle = "我写技术、诗歌与更多。"
         imageUrl = "logo.png"
         imageTitle = "logo"

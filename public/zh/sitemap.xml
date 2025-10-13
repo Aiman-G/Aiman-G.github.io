@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/zh/categories/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +20,88 @@
                 href="http://localhost:1313/zh/categories/"
                 />
   </url><url>
+    <loc>http://localhost:1313/zh/posts/hello/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/hello-world/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/posts/welcome/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/posts/hello/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/tags/intro/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/intro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/tags/intro/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/tags/misc/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/misc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/tags/misc/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/categories/others/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/others/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/categories/others/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/categories/others/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/posts/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/posts/"
+                />
+  </url><url>
     <loc>http://localhost:1313/zh/tags/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -34,6 +116,55 @@
                 rel="alternate"
                 hreflang="zh-CN"
                 href="http://localhost:1313/zh/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/categories/tech/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/categories/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/categories/tech/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/posts/non_tech_ch/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/fear-is-sweet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/posts/non_tech_ch/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/"
                 />
   </url><url>
     <loc>http://localhost:1313/zh/about/</loc>
@@ -51,23 +182,6 @@
                 rel="alternate"
                 hreflang="zh-CN"
                 href="http://localhost:1313/zh/about/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh/"
                 />
   </url>
 </urlset>
