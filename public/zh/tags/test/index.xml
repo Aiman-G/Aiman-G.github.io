@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Test on 艾尔曼</title>
+    <link>http://localhost:1313/zh/tags/test/</link>
+    <description>Recent content in Test on 艾尔曼</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>生活呀</title>
+      <link>http://localhost:1313/zh/posts/non_tech_ch/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/posts/non_tech_ch/</guid>
+      <description>&lt;p&gt;This my non tech blog in Chinese&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

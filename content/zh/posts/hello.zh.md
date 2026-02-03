@@ -7,4 +7,4 @@ tags: ["intro"]
 draft: false
 ---
 
-Welcome to your multilingual blog. This is the chinese version.
+Welcome to my multilingual blog. This is the chinese version.
