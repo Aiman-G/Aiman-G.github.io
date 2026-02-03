@@ -1,5 +1,5 @@
 ---
-title: "Chinese music"
+title: "梦里水乐"
 date: 2025-10-03
 translationKey: "a radndom thought"
 categories: ["others"]
