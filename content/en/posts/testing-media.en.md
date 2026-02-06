@@ -1,3 +1,6 @@
+
+
+
 ---
 title: " testing media"
 date: 2025-10-03
@@ -7,5 +10,6 @@ tags:  ["notes"]     # or "notes", "poem", "personal", etc."]
 draft: True
 ---
 
-![A translated alt text](static/media/testing.jpg)
+![A translated alt text](/media/xinnian.jpg)
+
 
