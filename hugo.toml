@@ -5,6 +5,11 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 hasCJKLanguage = true
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+
 [pagination]
   pagerSize = 10
 
