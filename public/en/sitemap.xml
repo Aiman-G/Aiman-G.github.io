@@ -7,11 +7,6 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh/posts/the_assisnation_ch_music/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
                 href="http://localhost:1313/zh/posts/non_tech_ch/"
                 />
     <xhtml:link
@@ -19,9 +14,6 @@
                 hreflang="en"
                 href="http://localhost:1313/en/posts/fear-is-sweet/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/en/posts/testing_media/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/categories/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
@@ -91,9 +83,6 @@
                 />
   </url><url>
     <loc>http://localhost:1313/en/tags/misc/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/tags/notes/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/categories/others/</loc>
