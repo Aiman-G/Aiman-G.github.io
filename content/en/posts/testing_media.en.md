@@ -1,7 +1,7 @@
 ---
-title: " tst"
+title: " testing media"
 date: 2025-10-03
-translationKey: "testing"
+translationKey: "testin media tansl."
 categories: ["others"]
 tags:  ["notes"]     # or "notes", "poem", "personal", etc."]
 draft: True
