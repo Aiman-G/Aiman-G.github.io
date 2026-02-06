@@ -16,10 +16,10 @@
       <description></description>
     </item>
     <item>
-      <title>Misc</title>
-      <link>http://localhost:1313/zh/tags/misc/</link>
+      <title>Test</title>
+      <link>http://localhost:1313/zh/tags/test/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/tags/misc/</guid>
+      <guid>http://localhost:1313/zh/tags/test/</guid>
       <description></description>
     </item>
   </channel>
