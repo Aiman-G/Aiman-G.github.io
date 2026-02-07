@@ -1,6 +1,6 @@
 ---
 title: "رائحة القدوم الى الحياة في اليمن "
-date: 2020-2021
+date: 2020-01-01
 translationKey: ""
 categories: ["others"]
 tags: ["مبعثرات"]

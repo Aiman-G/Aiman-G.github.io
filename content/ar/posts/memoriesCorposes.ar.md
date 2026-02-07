@@ -1,6 +1,6 @@
 ---
 title: "جثث الذكريات"
-date: 2025-10-03
+date: 2020-01-01
 translationKey: ""
 categories: ["others"]
 tags: ["مبعثرات"]

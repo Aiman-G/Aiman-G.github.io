@@ -2,7 +2,7 @@
 
 ---
 title: "الحرية في لحظة ما"
-date: 2025-10-03
+date: 2020-01-01
 
 categories: ["others"]
 tags: ["مبعثرات"]

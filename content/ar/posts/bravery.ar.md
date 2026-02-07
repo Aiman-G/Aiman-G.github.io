@@ -1,6 +1,6 @@
 ---
 title: "دليل الحياة"
-date: 2020-2021
+date: 2020-01-01
 categories: ["others"]
 tags: ["مبعثرات"]
 draft: true
