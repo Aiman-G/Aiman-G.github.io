@@ -5,7 +5,7 @@ date: 2025-10-03
 translationKey: ""
 categories: ["others"]
 tags: ["مبعثرات"]
-draft: false
+draft: true
 ---
 
 في الجنازات ،لا أستطيع أن ألجم ضحكتي،

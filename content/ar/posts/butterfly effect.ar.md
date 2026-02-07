@@ -5,7 +5,7 @@ date: 2025-10-03
 translationKey: ""
 categories: ["others"]
 tags: ["مبعثرات"]
-draft: false
+draft: true
 ---
 فراشة تهيم على وجه ماء تحت شعاع من شمس الضحى
 سأعيدها مرة أخرى:
