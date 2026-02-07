@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/zh/tags/network-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>中文动词网络探索器：把汉语动词当作一个系统来学（而不是背清单）</title>
-      <link>http://localhost:1313/zh/posts/hello/</link>
+      <link>http://localhost:1313/zh/posts/chinese-verbs-net/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/hello/</guid>
+      <guid>http://localhost:1313/zh/posts/chinese-verbs-net/</guid>
       <description>一个交互式 Streamlit 应用：用网络科学与语音学友好的工具，把常见双字动词在汉字、声调与语义层面的连接关系可视化。</description>
     </item>
   </channel>

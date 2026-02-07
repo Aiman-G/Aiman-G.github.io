@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/en/tags/streamlit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)</title>
-      <link>http://localhost:1313/en/posts/hello-world/</link>
+      <link>http://localhost:1313/en/posts/chinese-verbs-net/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/hello-world/</guid>
+      <guid>http://localhost:1313/en/posts/chinese-verbs-net/</guid>
       <description>An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science &#43; phonology-aware tooling.</description>
     </item>
   </channel>

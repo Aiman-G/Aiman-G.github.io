@@ -3,7 +3,7 @@ title: " Fear is Sweet( translated)"
 date: 2025-10-03
 translationKey: "a radndom thought"
 categories: ["others"]
-tags:  ["misc"]     # or "notes", "poem", "personal", etc."]
+     
 draft: false
 ---
 

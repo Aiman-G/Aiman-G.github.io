@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/zh/categories/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -21,41 +21,10 @@
                 />
   </url><url>
     <loc>http://localhost:1313/zh/tags/cluture/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/zh/posts/hello/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/posts/hello-world/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/ar/posts/welcome/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh/posts/hello/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh/tags/intro/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/intro/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh/tags/intro/"
-                />
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/zh/categories/others/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -72,26 +41,8 @@
                 href="http://localhost:1313/zh/categories/others/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh/posts/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/ar/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh/posts/"
-                />
-  </url><url>
     <loc>http://localhost:1313/zh/tags/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -108,8 +59,125 @@
                 href="http://localhost:1313/zh/tags/"
                 />
   </url><url>
+    <loc>http://localhost:1313/zh/posts/the_real_ch_music/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zh/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/posts/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/tags/data-visualization/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/data-visualization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/tags/data-visualization/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/tags/linguistics/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/linguistics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/tags/linguistics/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/tags/mandarin/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/mandarin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/tags/mandarin/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/tags/network-science/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/network-science/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/tags/network-science/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/tags/nlp/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/nlp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/tags/nlp/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/tags/streamlit/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/streamlit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/tags/streamlit/"
+                />
+  </url><url>
     <loc>http://localhost:1313/zh/categories/tech/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -126,26 +194,21 @@
                 href="http://localhost:1313/zh/categories/tech/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh/tags/test/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/zh/posts/the_assisnation_ch_music/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/zh/posts/chinese-verbs-net/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/posts/fear-is-sweet/"
+                href="http://localhost:1313/en/posts/chinese-verbs-net/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh/posts/non_tech_ch/"
+                href="http://localhost:1313/zh/posts/chinese-verbs-net/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh/posts/the_assisnation_ch_music/"
-                />
+  </url><url>
+    <loc>http://localhost:1313/zh/tags/test/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/zh/posts/non_tech_ch/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
@@ -157,30 +220,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh/posts/the_assisnation_ch_music/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
                 href="http://localhost:1313/zh/posts/non_tech_ch/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh/"
                 />
   </url><url>
     <loc>http://localhost:1313/zh/about/</loc>
