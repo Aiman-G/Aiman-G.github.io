@@ -6,14 +6,14 @@
     <description>Recent content in Posts on 艾尔曼</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello, world</title>
-      <link>http://localhost:1313/zh/posts/hello/</link>
-      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/hello/</guid>
-      <description>&lt;p&gt;Welcome to my multilingual blog. This is the chinese version.&lt;/p&gt;</description>
+      <title>中文动词网络探索器：把汉语动词当作一个系统来学（而不是背清单）</title>
+      <link>http://localhost:1313/zh/posts/chinese-verbs-net/</link>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/posts/chinese-verbs-net/</guid>
+      <description>一个交互式 Streamlit 应用：用网络科学与语音学友好的工具，把常见双字动词在汉字、声调与语义层面的连接关系可视化。</description>
     </item>
     <item>
       <title>梦里水乐</title>

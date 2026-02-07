@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tech on 艾尔曼</title>
-    <link>http://localhost:1313/zh/categories/tech/</link>
-    <description>Recent content in Tech on 艾尔曼</description>
+    <title>Nlp on 艾尔曼</title>
+    <link>http://localhost:1313/zh/tags/nlp/</link>
+    <description>Recent content in Nlp on 艾尔曼</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zh/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>中文动词网络探索器：把汉语动词当作一个系统来学（而不是背清单）</title>
-      <link>http://localhost:1313/zh/posts/chinese-verbs-net/</link>
+      <link>http://localhost:1313/zh/posts/hello/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/chinese-verbs-net/</guid>
+      <guid>http://localhost:1313/zh/posts/hello/</guid>
       <description>一个交互式 Streamlit 应用：用网络科学与语音学友好的工具，把常见双字动词在汉字、声调与语义层面的连接关系可视化。</description>
     </item>
   </channel>
