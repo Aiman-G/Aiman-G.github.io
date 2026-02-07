@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Aiman</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)</title>
+      <link>http://localhost:1313/en/posts/chinese-verbs-net/</link>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/chinese-verbs-net/</guid>
+      <description>An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science &#43; phonology-aware tooling.</description>
+    </item>
     <item>
       <title> Fear is Sweet( translated)</title>
       <link>http://localhost:1313/en/posts/fear-is-sweet/</link>
@@ -18,11 +25,12 @@ A fear that tickles you and pulls you away from the monotony of the known, makin
 But you grew up a little and dared a lot against the jinn’s myths and your grandmother’s warnings. You went to their mountainous death in the midst of the night, and you didn’t see the jinn. You became brave and dry from dreams.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Hello, world</title>
-      <link>http://localhost:1313/en/posts/hello-world/</link>
+      <title>testing media</title>
+      <link>http://localhost:1313/en/posts/testing-media/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/hello-world/</guid>
-      <description>&lt;p&gt;Welcome to your multilingual blog. This is the English version.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/en/posts/testing-media/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;A translated alt text&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/media/xinnian.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;testing something&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

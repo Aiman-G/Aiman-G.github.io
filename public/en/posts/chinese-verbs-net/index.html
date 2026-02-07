@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List) | Aiman</title>
+<meta name="keywords" content="mandarin, nlp, network-science, streamlit, linguistics, data-visualization">
+<meta name="description" content="An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science &#43; phonology-aware tooling.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/en/posts/chinese-verbs-net/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.dab938c5b9a6b1ddae5fa22a276334d11b21b757c2206f6f08ffc1a840a2d419.css" integrity="sha256-2rk4xbmmsd2uX6IqJ2M00Rsht1fCIG9vCP/BqECi1Bk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/en/posts/chinese-verbs-net/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/en/posts/chinese-verbs-net/">
+  <meta property="og:site_name" content="Aiman">
+  <meta property="og:title" content="Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)">
+  <meta property="og:description" content="An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science &#43; phonology-aware tooling.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-06T00:00:00+00:00">
+    <meta property="article:tag" content="Mandarin">
+    <meta property="article:tag" content="Nlp">
+    <meta property="article:tag" content="Network-Science">
+    <meta property="article:tag" content="Streamlit">
+    <meta property="article:tag" content="Linguistics">
+    <meta property="article:tag" content="Data-Visualization">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)">
+<meta name="twitter:description" content="An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science &#43; phonology-aware tooling.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/en/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)",
+      "item": "http://localhost:1313/en/posts/chinese-verbs-net/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)",
+  "name": "Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)",
+  "description": "An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science + phonology-aware tooling.",
+  "keywords": [
+    "mandarin", "nlp", "network-science", "streamlit", "linguistics", "data-visualization"
+  ],
+  "articleBody": "Chinese is a very interesting language in which most words are two characters long, and characters work like Lego blocks. A character can be used in many words. For me, memorizing verbs from a list is boring. Chinese has a structure that can be represented in an aesthetically pleasing way: networks.\nFor this reason, I built a Streamlit app that helps you explore common two-character Mandarin verbs through:\nCharacter networks (which characters combine with which), Semantic maps (UMAP projections of verb embeddings), Tone-pattern analysis (tone flows, tone networks, minimal contrasts), and teaching tools (coverage optimization + deck/curriculum builders). Try the app here: (https://explore-chinese.streamlit.app/)\nWhy a verb network? Two-character verbs are a huge part of everyday Mandarin. But learners often meet them as disconnected items (“记住 1000 个词”), which hides a useful fact:\nMany verbs share reusable characters and form clusters (“word families”).\nIf you learn the right hubs first, you unlock more vocabulary with less effort.\nThis app makes those hidden structures visible and interactive.\nData \u0026 conventions (what’s inside) The app uses a dataset of 1,140 Chinese Mandarin verbs, with 953 two-character verbs (the remainder are single-character). Pronunciations are prepared for learning by applying third-tone sandhi, and tone pairs use a simple convention:\nNeutral tone is encoded as 5, so tone patterns look like 3-4, 2-5, etc. Tone sandhi is already applied in the pinyin used by the app (so the displayed pronunciations are closer to what you’d say in connected speech). (These conventions are reflected directly in the app UI and filtering.)\nA quick tour (what you can do in 3 minutes) 1) Character Hub: “Which characters unlock the most verbs?” Page: Character Network (汉字网络)\nThis is a directed graph where:\nNodes = individual characters Edges = a two-character verb formation A → B (meaning the verb is “AB”) Inside the page you can:\nFilter by verb class/category (bilingual labels), Inspect a character’s role as a starter (out-degree) vs ender (in-degree), Use Learning Pathways: Degree centrality → “super-connectors” Betweenness centrality → “bridges” between clusters Explore Word Families discovered via community detection (clusters of tightly connected characters) How to use it (learner): pick one high-centrality character and study 10–20 verbs containing it.\nHow to use it (teacher): pick a community (“family”) and teach it as a themed unit.\n2) Explore Two-Character Verbs: semantics + tone flow Page: Explore Common Verbs (探索双字动词)\nThis page has two complementary lenses:\n🗺️ Semantic Map (UMAP) An interactive scatter plot where each dot is a verb.\nAxes are umap_x / umap_y (a 2D projection). Nearby verbs tend to be more similar in meaning (under the embedding space used to compute the projection). Color = verb category. You can also highlight a specific verb and read its details (pinyin, English gloss, tone pattern, and a category-conditioned transition probability shown in the UI).\n🌊 Tonal Flow (Sankey) A Sankey diagram shows how often tone X on the first character flows into tone Y on the second character, based on counts within your current filters.\nHow to use it: if a tone pair is hard for you (e.g., 3-3), filter to it and turn it into a focused practice set.\n3) Tone Patterns: phonology-first exploration Page: Tone Patterns (声调探索)\nThis section is for tone-aware learning and teaching. It includes:\nAn interactive tone network (edges colored by tone pairs and weighted by frequency), Tone pathways: generate a character chain biased toward a target tone pair, Tone in families: tone distributions inside network communities, Minimal tone-contrast sets: verbs sharing the same base pinyin (digits removed) but differing in tone patterns—useful for perception/production drills, Character tone profiles: which tones a character tends to take depending on position, A curriculum builder: sample a tone-pair-focused deck, optionally weighted by network degree. How to use it: pick 1–2 tone pairs for a week and generate a deck you can rehearse daily.\n4) Verb Action Coach: tools for lesson design + deliberate practice Page: Verb Action Coach (动词教学助理)\nThis is a “teacher/coach mode” with:\nCategory distribution + phonetic breakdown (initials/finals), A 5×5 tone heatmap (source tone → destination tone), A Coverage Optimizer: Given a budget k, the app greedily selects characters that cover the maximum number of verbs (a classic greedy approximation to set cover). Output includes coverage % plus a downloadable table of covered verbs. A Deck Builder: Filter by tone pairs and by phonetic components (initial/final, first/second character), Sample a study list (weighted by how frequently AB occurs in the dataset), Download as CSV. A Pitfalls tab: highlights characters with high tone variability (polyphony proxy), and lists 3-3 tone-pattern verbs (useful for tone sandhi practice). How to use it (teacher): set k=20 and build a “high-yield character” mini-course.\nHow to use it (learner): build a 40-card deck for one tone pair + one final (e.g., to target a pronunciation weakness).\nUnder the hood (compact technical notes) Network representation Two-character verbs are modeled as a directed graph char1 → char2. This makes it natural to compute:\nDegree (how many combinations a character participates in), Betweenness (bridge characters), Communities (clusters / “word families”). UMAP semantic map The semantic map uses UMAP, a nonlinear dimensionality reduction method applied to verb embeddings, producing the umap_x, umap_y coordinates shown in the app.\nCoverage optimizer (greedy set cover intuition) To maximize “verbs unlocked” under a character budget:\nStart with all verb-edges uncovered. Repeatedly pick the character that covers the most uncovered edges. Stop when you hit k or everything is covered. This is simple, fast, and surprisingly effective for building beginner-to-intermediate curricula.\nCaveats (important, especially for researchers) The semantic map is exploratory: 2D projections can distort distances, and embedding similarity is not the same as “ground-truth semantics.” Network structure depends on the dataset’s scope (frequency, selection criteria, labeling). How I’d love people to use this If you’re a learner:\nStart in Character Hub → pick 1 hub character Move to Explore Verbs → highlight 10 verbs containing it End in Deck Builder → export a focused practice list If you’re a teacher:\nUse Word Families → pick a cluster Use Tone Heatmap → select 1–2 common tone pairs Export a deck + build a lesson around it References Deng et al., A Chinese verb semantic feature dataset (CVFD), Behavior Research Methods (Springer). DOI: 10.3758/s13428-022-02047-4. McInnes, Healy, Melville, UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction (2018). If you try the app and have feedback (bugs, feature ideas, collaboration), I’d genuinely love to hear it.\n",
+  "wordCount" : "1314",
+  "inLanguage": "en",
+  "datePublished": "2026-02-06T00:00:00Z",
+  "dateModified": "2026-02-06T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/en/posts/chinese-verbs-net/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aiman",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/en/" accesskey="h" title="Aiman (Alt + H)">Aiman</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="http://localhost:1313/ar/" title="العربية"
+                                aria-label="العربية">العربية</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/zh/" title="简体中文"
+                                aria-label="简体中文">简体中文</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/en/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/en/categories/tech/" title="Tech">
+                    <span>Tech</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/en/categories/others/" title="Others">
+                    <span>Others</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/en/about/" title="About me">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/en/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/en/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)
+    </h1>
+    <div class="post-description">
+      An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science &#43; phonology-aware tooling.
+    </div>
+    <div class="post-meta"><span title='2026-02-06 00:00:00 +0000 UTC'>February 6, 2026</span>&nbsp;·&nbsp;<span>3 min</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Chinese is a very interesting language in which most words are two characters long, and characters work like Lego blocks. A character can be used in many words. For me, memorizing verbs from a list is boring.
+Chinese has a structure that can be represented in an aesthetically pleasing way: networks.</p>
+<p>For this reason, I built a Streamlit app that helps you explore <strong>common two-character Mandarin verbs</strong> through:</p>
+<ul>
+<li><strong>Character networks</strong> (which characters combine with which),</li>
+<li><strong>Semantic maps</strong> (UMAP projections of verb embeddings),</li>
+<li><strong>Tone-pattern analysis</strong> (tone flows, tone networks, minimal contrasts),</li>
+<li>and <strong>teaching tools</strong> (coverage optimization + deck/curriculum builders).</li>
+</ul>
+<p><strong>Try the app here:</strong> (<a href="https://explore-chinese.streamlit.app/">https://explore-chinese.streamlit.app/</a>)</p>
+<hr>
+<h2 id="why-a-verb-network">Why a verb network?<a hidden class="anchor" aria-hidden="true" href="#why-a-verb-network">#</a></h2>
+<p>Two-character verbs are a huge part of everyday Mandarin. But learners often meet them as disconnected items (“记住 1000 个词”), which hides a useful fact:</p>
+<blockquote>
+<p>Many verbs share <strong>reusable characters</strong> and form <strong>clusters</strong> (“word families”).<br>
+If you learn the right hubs first, you unlock more vocabulary with less effort.</p></blockquote>
+<p>This app makes those hidden structures visible and interactive.</p>
+<hr>
+<h2 id="data--conventions-whats-inside">Data &amp; conventions (what’s inside)<a hidden class="anchor" aria-hidden="true" href="#data--conventions-whats-inside">#</a></h2>
+<p>The app uses a dataset of <strong>1,140 Chinese Mandarin verbs</strong>, with <strong>953 two-character verbs</strong> (the remainder are single-character). Pronunciations are prepared for learning by applying <strong>third-tone sandhi</strong>, and tone pairs use a simple convention:</p>
+<ul>
+<li><strong>Neutral tone is encoded as 5</strong>, so tone patterns look like <code>3-4</code>, <code>2-5</code>, etc.</li>
+<li>Tone sandhi is already applied in the pinyin used by the app (so the displayed pronunciations are closer to what you’d say in connected speech).</li>
+</ul>
+<p>(These conventions are reflected directly in the app UI and filtering.)</p>
+<hr>
+<h2 id="a-quick-tour-what-you-can-do-in-3-minutes">A quick tour (what you can do in 3 minutes)<a hidden class="anchor" aria-hidden="true" href="#a-quick-tour-what-you-can-do-in-3-minutes">#</a></h2>
+<h3 id="1-character-hub-which-characters-unlock-the-most-verbs">1) Character Hub: “Which characters unlock the most verbs?”<a hidden class="anchor" aria-hidden="true" href="#1-character-hub-which-characters-unlock-the-most-verbs">#</a></h3>
+<p><strong>Page:</strong> Character Network (汉字网络)</p>
+<p>This is a directed graph where:</p>
+<ul>
+<li><strong>Nodes</strong> = individual characters</li>
+<li><strong>Edges</strong> = a two-character verb formation <code>A → B</code> (meaning the verb is “AB”)</li>
+</ul>
+<p>Inside the page you can:</p>
+<ul>
+<li>Filter by <strong>verb class/category</strong> (bilingual labels),</li>
+<li>Inspect a character’s role as a <strong>starter</strong> (out-degree) vs <strong>ender</strong> (in-degree),</li>
+<li>Use <strong>Learning Pathways</strong>:
+<ul>
+<li><strong>Degree centrality</strong> → “super-connectors”</li>
+<li><strong>Betweenness centrality</strong> → “bridges” between clusters</li>
+</ul>
+</li>
+<li>Explore <strong>Word Families</strong> discovered via community detection (clusters of tightly connected characters)</li>
+</ul>
+<p><strong>How to use it (learner):</strong> pick one high-centrality character and study 10–20 verbs containing it.<br>
+<strong>How to use it (teacher):</strong> pick a community (“family”) and teach it as a themed unit.</p>
+<hr>
+<h3 id="2-explore-two-character-verbs-semantics--tone-flow">2) Explore Two-Character Verbs: semantics + tone flow<a hidden class="anchor" aria-hidden="true" href="#2-explore-two-character-verbs-semantics--tone-flow">#</a></h3>
+<p><strong>Page:</strong> Explore Common Verbs (探索双字动词)</p>
+<p>This page has two complementary lenses:</p>
+<h4 id="-semantic-map-umap">🗺️ Semantic Map (UMAP)<a hidden class="anchor" aria-hidden="true" href="#-semantic-map-umap">#</a></h4>
+<p>An interactive scatter plot where each dot is a verb.</p>
+<ul>
+<li>Axes are <code>umap_x / umap_y</code> (a 2D projection).</li>
+<li>Nearby verbs tend to be <strong>more similar in meaning</strong> (under the embedding space used to compute the projection).</li>
+<li>Color = verb category.</li>
+</ul>
+<p>You can also <strong>highlight a specific verb</strong> and read its details (pinyin, English gloss, tone pattern, and a category-conditioned transition probability shown in the UI).</p>
+<h4 id="-tonal-flow-sankey">🌊 Tonal Flow (Sankey)<a hidden class="anchor" aria-hidden="true" href="#-tonal-flow-sankey">#</a></h4>
+<p>A Sankey diagram shows how often tone <code>X</code> on the first character flows into tone <code>Y</code> on the second character, based on counts within your current filters.</p>
+<p><strong>How to use it:</strong> if a tone pair is hard for you (e.g., <code>3-3</code>), filter to it and turn it into a focused practice set.</p>
+<hr>
+<h3 id="3-tone-patterns-phonology-first-exploration">3) Tone Patterns: phonology-first exploration<a hidden class="anchor" aria-hidden="true" href="#3-tone-patterns-phonology-first-exploration">#</a></h3>
+<p><strong>Page:</strong> Tone Patterns (声调探索)</p>
+<p>This section is for tone-aware learning and teaching. It includes:</p>
+<ul>
+<li>An interactive <strong>tone network</strong> (edges colored by tone pairs and weighted by frequency),</li>
+<li><strong>Tone pathways</strong>: generate a character chain biased toward a target tone pair,</li>
+<li><strong>Tone in families</strong>: tone distributions inside network communities,</li>
+<li><strong>Minimal tone-contrast sets</strong>: verbs sharing the same base pinyin (digits removed) but differing in tone patterns—useful for perception/production drills,</li>
+<li><strong>Character tone profiles</strong>: which tones a character tends to take depending on position,</li>
+<li>A <strong>curriculum builder</strong>: sample a tone-pair-focused deck, optionally weighted by network degree.</li>
+</ul>
+<p><strong>How to use it:</strong> pick 1–2 tone pairs for a week and generate a deck you can rehearse daily.</p>
+<hr>
+<h3 id="4-verb-action-coach-tools-for-lesson-design--deliberate-practice">4) Verb Action Coach: tools for lesson design + deliberate practice<a hidden class="anchor" aria-hidden="true" href="#4-verb-action-coach-tools-for-lesson-design--deliberate-practice">#</a></h3>
+<p><strong>Page:</strong> Verb Action Coach (动词教学助理)</p>
+<p>This is a “teacher/coach mode” with:</p>
+<ul>
+<li>Category distribution + phonetic breakdown (initials/finals),</li>
+<li>A <strong>5×5 tone heatmap</strong> (source tone → destination tone),</li>
+<li>A <strong>Coverage Optimizer</strong>:
+<ul>
+<li>Given a budget <code>k</code>, the app greedily selects characters that cover the maximum number of verbs (a classic greedy approximation to set cover).</li>
+<li>Output includes coverage % plus a downloadable table of covered verbs.</li>
+</ul>
+</li>
+<li>A <strong>Deck Builder</strong>:
+<ul>
+<li>Filter by tone pairs and by phonetic components (initial/final, first/second character),</li>
+<li>Sample a study list (weighted by how frequently AB occurs in the dataset),</li>
+<li>Download as CSV.</li>
+</ul>
+</li>
+<li>A <strong>Pitfalls</strong> tab:
+<ul>
+<li>highlights characters with high tone variability (polyphony proxy),</li>
+<li>and lists <code>3-3</code> tone-pattern verbs (useful for tone sandhi practice).</li>
+</ul>
+</li>
+</ul>
+<p><strong>How to use it (teacher):</strong> set <code>k=20</code> and build a “high-yield character” mini-course.<br>
+<strong>How to use it (learner):</strong> build a 40-card deck for one tone pair + one final (e.g., to target a pronunciation weakness).</p>
+<hr>
+<h2 id="under-the-hood-compact-technical-notes">Under the hood (compact technical notes)<a hidden class="anchor" aria-hidden="true" href="#under-the-hood-compact-technical-notes">#</a></h2>
+<h3 id="network-representation">Network representation<a hidden class="anchor" aria-hidden="true" href="#network-representation">#</a></h3>
+<p>Two-character verbs are modeled as a directed graph <code>char1 → char2</code>. This makes it natural to compute:</p>
+<ul>
+<li><strong>Degree</strong> (how many combinations a character participates in),</li>
+<li><strong>Betweenness</strong> (bridge characters),</li>
+<li><strong>Communities</strong> (clusters / “word families”).</li>
+</ul>
+<h3 id="umap-semantic-map">UMAP semantic map<a hidden class="anchor" aria-hidden="true" href="#umap-semantic-map">#</a></h3>
+<p>The semantic map uses <strong>UMAP</strong>, a nonlinear dimensionality reduction method applied to verb embeddings, producing the <code>umap_x, umap_y</code> coordinates shown in the app.</p>
+<h3 id="coverage-optimizer-greedy-set-cover-intuition">Coverage optimizer (greedy set cover intuition)<a hidden class="anchor" aria-hidden="true" href="#coverage-optimizer-greedy-set-cover-intuition">#</a></h3>
+<p>To maximize “verbs unlocked” under a character budget:</p>
+<ol>
+<li>Start with all verb-edges uncovered.</li>
+<li>Repeatedly pick the character that covers the most uncovered edges.</li>
+<li>Stop when you hit <code>k</code> or everything is covered.</li>
+</ol>
+<p>This is simple, fast, and surprisingly effective for building beginner-to-intermediate curricula.</p>
+<hr>
+<h2 id="caveats-important-especially-for-researchers">Caveats (important, especially for researchers)<a hidden class="anchor" aria-hidden="true" href="#caveats-important-especially-for-researchers">#</a></h2>
+<ul>
+<li>The semantic map is <strong>exploratory</strong>: 2D projections can distort distances, and embedding similarity is not the same as “ground-truth semantics.”</li>
+<li>Network structure depends on the dataset’s scope (frequency, selection criteria, labeling).</li>
+</ul>
+<hr>
+<h2 id="how-id-love-people-to-use-this">How I’d love people to use this<a hidden class="anchor" aria-hidden="true" href="#how-id-love-people-to-use-this">#</a></h2>
+<p>If you’re a learner:</p>
+<ol>
+<li>Start in <strong>Character Hub</strong> → pick 1 hub character</li>
+<li>Move to <strong>Explore Verbs</strong> → highlight 10 verbs containing it</li>
+<li>End in <strong>Deck Builder</strong> → export a focused practice list</li>
+</ol>
+<p>If you’re a teacher:</p>
+<ol>
+<li>Use <strong>Word Families</strong> → pick a cluster</li>
+<li>Use <strong>Tone Heatmap</strong> → select 1–2 common tone pairs</li>
+<li>Export a deck + build a lesson around it</li>
+</ol>
+<hr>
+<h2 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h2>
+<ul>
+<li>Deng et al., <em>A Chinese verb semantic feature dataset (CVFD)</em>, <strong>Behavior Research Methods</strong> (Springer). DOI: 10.3758/s13428-022-02047-4.</li>
+<li>McInnes, Healy, Melville, <em>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</em> (2018).</li>
+</ul>
+<hr>
+<p>If you try the app and have feedback (bugs, feature ideas, collaboration), I’d genuinely love to hear it.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/en/tags/mandarin/">Mandarin</a></li>
+      <li><a href="http://localhost:1313/en/tags/nlp/">Nlp</a></li>
+      <li><a href="http://localhost:1313/en/tags/network-science/">Network-Science</a></li>
+      <li><a href="http://localhost:1313/en/tags/streamlit/">Streamlit</a></li>
+      <li><a href="http://localhost:1313/en/tags/linguistics/">Linguistics</a></li>
+      <li><a href="http://localhost:1313/en/tags/data-visualization/">Data-Visualization</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/en/posts/fear-is-sweet/">
+    <span class="title">Next »</span>
+    <br>
+    <span> Fear is Sweet( translated)</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/en/">Aiman</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

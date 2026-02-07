@@ -7,6 +7,11 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
+                href="http://localhost:1313/zh/posts/the_assisnation_ch_music/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
                 href="http://localhost:1313/zh/posts/non_tech_ch/"
                 />
     <xhtml:link
