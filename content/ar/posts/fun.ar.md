@@ -1,8 +1,8 @@
 
 ---
 title: "في الجنازات"
-date: 2025-10-03
-translationKey: ""
+date: 2020-2021
+
 categories: ["others"]
 tags: ["مبعثرات"]
 draft: true
