@@ -1,4 +1,3 @@
-
 ---
 title: "Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)"
 date: 2026-02-06
