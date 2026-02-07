@@ -3,7 +3,7 @@ title: "Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a L
 date: 2026-02-06
 description: "An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science + phonology-aware tooling."
 categories: ["tech"]
-tags: ["intro"]
+
 draft: false
 tags: ["mandarin", "nlp", "network-science", "streamlit", "linguistics", "data-visualization"]
 ---
