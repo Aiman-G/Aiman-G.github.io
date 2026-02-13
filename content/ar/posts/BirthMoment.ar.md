@@ -4,7 +4,7 @@ date: 2020-01-01
 translationKey: ""
 categories: ["others"]
 tags: ["مبعثرات"]
-draft: true
+draft: false
 ---
 
 

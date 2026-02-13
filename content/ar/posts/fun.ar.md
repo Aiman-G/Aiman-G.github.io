@@ -5,7 +5,7 @@ date: 2020-01-01
 
 categories: ["others"]
 tags: ["مبعثرات"]
-draft: true
+draft: false
 ---
 
 في الجنازات ،لا أستطيع أن ألجم ضحكتي،

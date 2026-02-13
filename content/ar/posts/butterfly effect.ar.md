@@ -4,7 +4,7 @@ title: "أثر الفراشة "
 date: 2020-01-01
 categories: ["others"]
 tags: ["مبعثرات"]
-draft: true
+draft: false
 ---
 فراشة تهيم على وجه ماء تحت شعاع من شمس الضحى
 سأعيدها مرة أخرى:
