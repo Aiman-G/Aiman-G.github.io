@@ -83,16 +83,7 @@ So with 20 ideas, the number of possible combinations already exceeds **one mill
 
 
 
-Except, it is not that simple. the mind never wander between a predefined set of ideas, while exploring the ideas you know, 
-there are ideas pop up in between. 
-
-Assume you are miserble, you eat your luach at the supper markert beside your job place. 
-The ready meals are boring, you think you will make a ready one from the suppermarkt, 
-so instead of buying tuna sandwitch you buy bread, then you buy cheese, and honey, you make your honey cheese sandwich.
-next day you wander in the circle, in one shelf you see seasme Halwa, okay.. another part comes into the game, you remove honey and replace by Halwa ( btw, try it, it is a very famous breakfast in Yemen.).
-out of nowhare, someone appeard selling bioled eggs in a passage beside near your way to supermarket, you thought, maybe eggs, cheese, and honey is a good idea.. . etc. you see, while starting solving the problem with a set of ingerdients(cheese, honey, bread), you discover new ingreidents, and you do not know which combination will kill your boredom.. 
-
-
+Except, it is not that simple. 
 
 
 
