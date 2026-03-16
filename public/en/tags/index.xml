@@ -2,59 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Aiman</title>
-    <link>http://localhost:1313/en/tags/</link>
+    <link>http://localhost:52691/en/tags/</link>
     <description>Recent content in Tags on Aiman</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:52691/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:52691/en/tags/ai/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52691/en/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Creativity</title>
+      <link>http://localhost:52691/en/tags/creativity/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52691/en/tags/creativity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:52691/en/tags/llm/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52691/en/tags/llm/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Data-Visualization</title>
-      <link>http://localhost:1313/en/tags/data-visualization/</link>
+      <link>http://localhost:52691/en/tags/data-visualization/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/tags/data-visualization/</guid>
+      <guid>http://localhost:52691/en/tags/data-visualization/</guid>
       <description></description>
     </item>
     <item>
       <title>Linguistics</title>
-      <link>http://localhost:1313/en/tags/linguistics/</link>
+      <link>http://localhost:52691/en/tags/linguistics/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/tags/linguistics/</guid>
+      <guid>http://localhost:52691/en/tags/linguistics/</guid>
       <description></description>
     </item>
     <item>
       <title>Mandarin</title>
-      <link>http://localhost:1313/en/tags/mandarin/</link>
+      <link>http://localhost:52691/en/tags/mandarin/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/tags/mandarin/</guid>
+      <guid>http://localhost:52691/en/tags/mandarin/</guid>
       <description></description>
     </item>
     <item>
       <title>Network-Science</title>
-      <link>http://localhost:1313/en/tags/network-science/</link>
+      <link>http://localhost:52691/en/tags/network-science/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/tags/network-science/</guid>
+      <guid>http://localhost:52691/en/tags/network-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Nlp</title>
-      <link>http://localhost:1313/en/tags/nlp/</link>
+      <link>http://localhost:52691/en/tags/nlp/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/tags/nlp/</guid>
+      <guid>http://localhost:52691/en/tags/nlp/</guid>
       <description></description>
     </item>
     <item>
       <title>Streamlit</title>
-      <link>http://localhost:1313/en/tags/streamlit/</link>
+      <link>http://localhost:52691/en/tags/streamlit/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/tags/streamlit/</guid>
+      <guid>http://localhost:52691/en/tags/streamlit/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes</title>
-      <link>http://localhost:1313/en/tags/notes/</link>
+      <link>http://localhost:52691/en/tags/notes/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/tags/notes/</guid>
+      <guid>http://localhost:52691/en/tags/notes/</guid>
       <description></description>
     </item>
   </channel>

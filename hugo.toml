@@ -9,6 +9,16 @@ hasCJKLanguage = true
   [caches.images]
     dir = ':cacheDir/images'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
+      
 
 [pagination]
   pagerSize = 10
@@ -34,6 +44,7 @@ hasCJKLanguage = true
   showPageNums = true
   comments = false
   displayFullLangName = true
+  math = true  
   description = "Thoughts, notes, and scatters."
 
 [languages]

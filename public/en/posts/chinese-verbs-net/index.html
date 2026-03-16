@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52691&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,17 +9,17 @@
 <meta name="keywords" content="mandarin, nlp, network-science, streamlit, linguistics, data-visualization">
 <meta name="description" content="An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science &#43; phonology-aware tooling.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/en/posts/chinese-verbs-net/">
+<link rel="canonical" href="http://localhost:52691/en/posts/chinese-verbs-net/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.dab938c5b9a6b1ddae5fa22a276334d11b21b757c2206f6f08ffc1a840a2d419.css" integrity="sha256-2rk4xbmmsd2uX6IqJ2M00Rsht1fCIG9vCP/BqECi1Bk=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:52691/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:52691/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:52691/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:52691/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:52691/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/en/posts/chinese-verbs-net/">
-<link rel="alternate" hreflang="zh" href="http://localhost:1313/zh/posts/chinese-verbs-net/">
+<link rel="alternate" hreflang="en" href="http://localhost:52691/en/posts/chinese-verbs-net/">
+<link rel="alternate" hreflang="zh" href="http://localhost:52691/zh/posts/chinese-verbs-net/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,7 +56,21 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="http://localhost:1313/en/posts/chinese-verbs-net/">
+</noscript>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+<meta property="og:url" content="http://localhost:52691/en/posts/chinese-verbs-net/">
   <meta property="og:site_name" content="Aiman">
   <meta property="og:title" content="Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)">
   <meta property="og:description" content="An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science &#43; phonology-aware tooling.">
@@ -85,13 +99,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://localhost:1313/en/posts/"
+      "item": "http://localhost:52691/en/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)",
-      "item": "http://localhost:1313/en/posts/chinese-verbs-net/"
+      "item": "http://localhost:52691/en/posts/chinese-verbs-net/"
     }
   ]
 }
@@ -113,18 +127,33 @@
   "dateModified": "2026-02-06T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/en/posts/chinese-verbs-net/"
+    "@id": "http://localhost:52691/en/posts/chinese-verbs-net/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Aiman",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "http://localhost:52691/favicon.ico"
     }
   }
 }
 </script>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
 </head>
 
 <body class="" id="top">
@@ -142,7 +171,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/en/" accesskey="h" title="Aiman (Alt + H)">Aiman</a>
+            <a href="http://localhost:52691/en/" accesskey="h" title="Aiman (Alt + H)">Aiman</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -166,11 +195,11 @@
                 </button>
                     <ul class="lang-switch"><li>|</li>
                         <li>
-                            <a href="http://localhost:1313/ar/" title="العربية"
+                            <a href="http://localhost:52691/ar/" title="العربية"
                                 aria-label="العربية">العربية</a>
                         </li>
                         <li>
-                            <a href="http://localhost:1313/zh/" title="简体中文"
+                            <a href="http://localhost:52691/zh/" title="简体中文"
                                 aria-label="简体中文">简体中文</a>
                         </li>
                     </ul>
@@ -178,22 +207,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/en/posts/" title="Posts">
+                <a href="http://localhost:52691/en/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/en/categories/tech/" title="Tech">
+                <a href="http://localhost:52691/en/categories/tech/" title="Tech">
                     <span>Tech</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/en/categories/others/" title="Others">
+                <a href="http://localhost:52691/en/categories/others/" title="Others">
                     <span>Others</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/en/about/" title="About me">
+                <a href="http://localhost:52691/en/about/" title="About me">
                     <span>About</span>
                 </a>
             </li>
@@ -204,7 +233,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/en/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/en/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:52691/en/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:52691/en/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)
     </h1>
@@ -214,7 +243,7 @@
     <div class="post-meta"><span title='2026-02-06 00:00:00 +0000 UTC'>February 6, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;|&nbsp;<span>Translations:</span>
 <ul class="i18n_list">
     <li>
-        <a href="http://localhost:1313/zh/posts/chinese-verbs-net/">简体中文</a>
+        <a href="http://localhost:52691/zh/posts/chinese-verbs-net/">简体中文</a>
     </li>
 </ul>
 
@@ -378,15 +407,20 @@ If you learn the right hubs first, you unlock more vocabulary with less effort.<
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/en/tags/mandarin/">Mandarin</a></li>
-      <li><a href="http://localhost:1313/en/tags/nlp/">Nlp</a></li>
-      <li><a href="http://localhost:1313/en/tags/network-science/">Network-Science</a></li>
-      <li><a href="http://localhost:1313/en/tags/streamlit/">Streamlit</a></li>
-      <li><a href="http://localhost:1313/en/tags/linguistics/">Linguistics</a></li>
-      <li><a href="http://localhost:1313/en/tags/data-visualization/">Data-Visualization</a></li>
+      <li><a href="http://localhost:52691/en/tags/mandarin/">Mandarin</a></li>
+      <li><a href="http://localhost:52691/en/tags/nlp/">Nlp</a></li>
+      <li><a href="http://localhost:52691/en/tags/network-science/">Network-Science</a></li>
+      <li><a href="http://localhost:52691/en/tags/streamlit/">Streamlit</a></li>
+      <li><a href="http://localhost:52691/en/tags/linguistics/">Linguistics</a></li>
+      <li><a href="http://localhost:52691/en/tags/data-visualization/">Data-Visualization</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="http://localhost:1313/en/posts/fear-is-sweet/">
+  <a class="prev" href="http://localhost:52691/en/posts/creativity/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Creativity Is Systematic Hallucination</span>
+  </a>
+  <a class="next" href="http://localhost:52691/en/posts/fear-is-sweet/">
     <span class="title">Next »</span>
     <br>
     <span> Fear is Sweet( translated)</span>
@@ -398,7 +432,7 @@ If you learn the right hubs first, you unlock more vocabulary with less effort.<
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/en/">Aiman</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:52691/en/">Aiman</a></span> · 
 
     <span>
         Powered by
