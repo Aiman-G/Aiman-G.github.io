@@ -22,9 +22,11 @@ This systematic connection and exploration are what distinguish creativity from 
 
 Creativity can be seen as a kind of systematic hallucination, while hallucination is simply random connection or recombination.
 
+Here, on this page, I use **hallucination** to mean jumping between ideas that seem unrelated to someone who is not sharing the subjective experience , the listener. I do not know about the other side; I guess no one hallucinates while knowing that they are hallucinating.
+
 Will AI be creative?
 
-Yes. If you have the resources , data, compute, and the ability to search and connect, you can create “new” things.
+Yes. If you have the resources: data, compute, and the ability to search and connect, you can create “new” things.
 
 Isn’t AlphaFold creative? I would say it is. The output of AlphaFold is, in a sense, genuinely creative: it produces new and useful results by exploring patterns beyond ordinary human intuition.
 
@@ -96,15 +98,31 @@ Instead of buying a tuna sandwich, you buy bread, cheese, and honey. You make a 
 
 The next day, you wander again through the same space. On one shelf, you see sesame halwa. Now a new element enters the game. You remove the honey and replace it with halwa(BTW, try it ,  it is a very common breakfast in Yemen.)
 
-Then, out of nowhere, someone appears near the supermarket selling boiled eggs. Now yet another idea enters the search space. You start thinking: maybe eggs, cheese, and honey could work together.
+Then, out of nowhere, someone appears near the supermarket selling boiled eggs. Now yet another idea enters the search space. You start thinking: maybe eggs, cheese, and honey[^1] could work together.
 
 
 
 You begin with a limited set of ingredients, but while searching among them, new ingredients appear. The space itself expands while you are exploring it.
 
-So the real cost of creativity is not only the number of combinations inside a fixed space. It is also the cost of dealing with a search space that keeps changing while you search( we have not spoken about the evaluation cost so far, and we  will never do)
+So the real cost of creativity is not only the number of combinations inside a fixed space. It is also the cost of dealing with a search space that keeps changing while you search( **we have not spoken about the evaluation cost so far, and we  will never do**)
 
-A focused mind is cheaper because it wanders inside a smaller space. A specialized AI is cheaper for the same reason. The more bounded the space, the more manageable the combinatorial explosion becomes.
+It is not merely a search problem; it is a dynamic search in a dynamic space.
+
+so , a focused mind is less costly because it wanders within a smaller space. A specialized AI is cheaper for the same reason. The more bounded the space, the more manageable the combinatorial explosion becomes. But this is only true if we already know that novelty can emerge from combinations within that predefined space. It also depends on treating ideas as discrete units. If the search space is continuous, then the number of possible combinations becomes infinite.  
 
 
+
+This, makes us think differently about creative people.
+
+How do their minds work? How do they explore ideas? Is creativity extreme luck? Or is it the repeated return to the same set of ideas until a useful new combination appears?
+
+Perhaps truly creative people develop a kind of selective power ( a taste) that reduces the search space without killing the wandering.
+
+ 
+
+
+
+
+
+[^1]: Combining honey with boiled eggs is, in my subjective experience, a food hallucination.
 
