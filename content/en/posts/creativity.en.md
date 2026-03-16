@@ -110,7 +110,7 @@ It is not merely a search problem; it is a dynamic search in a dynamic space.
 
 so , a focused mind is less costly because it wanders within a smaller space. A specialized AI is cheaper for the same reason. The more bounded the space, the more manageable the combinatorial explosion becomes. But this is only true if we already know that novelty can emerge from combinations within that predefined space. It also depends on treating ideas as discrete units. If the search space is continuous, then the number of possible combinations becomes infinite.  
 
-Having a general purpose AI system like LLM, that is creative, it is not only restirced by this enless search space, but also by other restrictions ( they call it alignment).
+Having a general purpose AI system like LLM, that is creative, it is not only restirced by this endless search space, but also by other restrictions ( they call it alignment).
 
 This, makes us think differently about creative people.
 
