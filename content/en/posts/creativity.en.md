@@ -1,5 +1,5 @@
 ---
-title: "Creativity Is Systematic Hallucination"
+title: "Creativity Is a Systematic Hallucination"
 date: 2026-03-16
 description: "A personal reflection on creativity."
 categories: ["tech"]

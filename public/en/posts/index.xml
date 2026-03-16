@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Aiman</title>
-    <link>http://localhost:1313/en/posts/</link>
+    <link>http://localhost:52691/en/posts/</link>
     <description>Recent content in Posts on Aiman</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52691/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Creativity Is Systematic Hallucination</title>
-      <link>http://localhost:1313/en/posts/creativity/</link>
+      <title>Creativity Is a Systematic Hallucination</title>
+      <link>http://localhost:52691/en/posts/creativity/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/creativity/</guid>
+      <guid>http://localhost:52691/en/posts/creativity/</guid>
       <description>A personal reflection on creativity.</description>
     </item>
     <item>
       <title>Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)</title>
-      <link>http://localhost:1313/en/posts/chinese-verbs-net/</link>
+      <link>http://localhost:52691/en/posts/chinese-verbs-net/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/chinese-verbs-net/</guid>
+      <guid>http://localhost:52691/en/posts/chinese-verbs-net/</guid>
       <description>An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science &#43; phonology-aware tooling.</description>
     </item>
     <item>
       <title> Fear is Sweet( translated)</title>
-      <link>http://localhost:1313/en/posts/fear-is-sweet/</link>
+      <link>http://localhost:52691/en/posts/fear-is-sweet/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/fear-is-sweet/</guid>
+      <guid>http://localhost:52691/en/posts/fear-is-sweet/</guid>
       <description>&lt;p&gt;Love is delicious like fear—fear of the jinn who hide in mountain bends on a rural night.
 A fear that tickles you and pulls you away from the monotony of the known, making you want to stay on its edges and weave dreams from there.
 But you grew up a little and dared a lot against the jinn’s myths and your grandmother’s warnings. You went to their mountainous death in the midst of the night, and you didn’t see the jinn. You became brave and dry from dreams.&lt;/p&gt;</description>
     </item>
     <item>
       <title>testing media</title>
-      <link>http://localhost:1313/en/posts/testing-media/</link>
+      <link>http://localhost:52691/en/posts/testing-media/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/testing-media/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;A translated alt text&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/media/xinnian.jpg&#34;&gt;&lt;/p&gt;
+      <guid>http://localhost:52691/en/posts/testing-media/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;A translated alt text&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:52691/media/xinnian.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;testing something&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
