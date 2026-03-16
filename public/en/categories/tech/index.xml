@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tech on Aiman</title>
-    <link>http://localhost:1313/en/categories/tech/</link>
+    <link>http://localhost:52691/en/categories/tech/</link>
     <description>Recent content in Tech on Aiman</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52691/en/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creativity Is Systematic Hallucination</title>
-      <link>http://localhost:1313/en/posts/creativity/</link>
+      <link>http://localhost:52691/en/posts/creativity/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/creativity/</guid>
+      <guid>http://localhost:52691/en/posts/creativity/</guid>
       <description>A personal reflection on creativity.</description>
     </item>
     <item>
       <title>Chinese Verb Network Explorer: Learn Mandarin Verbs as a System (Not a List)</title>
-      <link>http://localhost:1313/en/posts/chinese-verbs-net/</link>
+      <link>http://localhost:52691/en/posts/chinese-verbs-net/</link>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/chinese-verbs-net/</guid>
+      <guid>http://localhost:52691/en/posts/chinese-verbs-net/</guid>
       <description>An interactive Streamlit app that visualizes how two-character Chinese verbs connect through characters, tones, and semantics—using network science &#43; phonology-aware tooling.</description>
     </item>
   </channel>
