@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Creativity on Aiman</title>
-    <link>http://localhost:52691/en/tags/creativity/</link>
+    <link>http://localhost:1313/en/tags/creativity/</link>
     <description>Recent content in Creativity on Aiman</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52691/en/tags/creativity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/creativity/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Creativity Is Systematic Hallucination</title>
-      <link>http://localhost:52691/en/posts/creativity/</link>
+      <title>Creativity Is a Systematic Hallucination</title>
+      <link>http://localhost:1313/en/posts/creativity/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52691/en/posts/creativity/</guid>
+      <guid>http://localhost:1313/en/posts/creativity/</guid>
       <description>A personal reflection on creativity.</description>
     </item>
   </channel>

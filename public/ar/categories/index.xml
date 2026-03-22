@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on أيمن</title>
-    <link>http://localhost:52691/ar/categories/</link>
+    <link>http://localhost:1313/ar/categories/</link>
     <description>Recent content in Categories on أيمن</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>ar</language>
     <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52691/ar/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ar/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Others</title>
-      <link>http://localhost:52691/ar/categories/others/</link>
+      <link>http://localhost:1313/ar/categories/others/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52691/ar/categories/others/</guid>
+      <guid>http://localhost:1313/ar/categories/others/</guid>
       <description></description>
     </item>
     <item>
       <title>Tech</title>
-      <link>http://localhost:52691/ar/categories/tech/</link>
+      <link>http://localhost:1313/ar/categories/tech/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52691/ar/categories/tech/</guid>
+      <guid>http://localhost:1313/ar/categories/tech/</guid>
       <description></description>
     </item>
   </channel>
