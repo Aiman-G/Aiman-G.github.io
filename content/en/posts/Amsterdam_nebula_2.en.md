@@ -1,5 +1,5 @@
 ---
-title: "  سديم امستردام 2  "
+title: "  Amsterdam Nebula 2  "
 date: 2026-01-01
 translationKey: ""
 categories: ["others"]
@@ -8,22 +8,23 @@ draft: false
 ---
 
 
-يخيل لي ان امستردام جزر صغيرة وكثيرة تمزق جسدها قنوات تربط بحرين يحيطان بها من جهتين.
-تصل القنوات البحرين مثل العابرين فيها.
-يتدفق السائحون مثل القنوات، في شوارع محددة،  يعرفون أين يذهبون . 
-أما أنا فجدار قناة .
-يمضي بعضي مع الماء إلى هذه بحر وبعضي إلى البحر  المقابل. 
-أعبر إلى الجهتين،
-لكن ببطء شديد.
+# The Amsterdam Nebula II
 
-سديم امستردام ٣
-هناك جدار في امستردام سمع كل اللغات، راى كل الألوان، و اشتم كل عطر.
-لديه من البيانات عن البشر ما لا يعرفه اي مركز بيانات في العالم.
-في صباح يوم ما، مررت بجواره، فتوقف واستدرت وسألته:
-ماذا تعرف عني من من عبروا قبلي؟
-فرد علي:
-اذهب واحضر لي كروسون بالجنبة من البرت هاين،
-وكوب قهوة اولا يا احمق.
+It seems to me that Amsterdam is made of many small islands, its body torn apart by canals that connect the two seas surrounding it from either side.
+
+The canals connect the seas like people crossing through them.
+
+Tourists flow like the canals, along designated streets, knowing where they are going.
+
+But I am a canal wall.
+
+Part of me moves with the water toward this sea,
+and part of me toward the sea opposite.
+
+I cross to both sides,
+
+but very slowly.
+
 
 
 

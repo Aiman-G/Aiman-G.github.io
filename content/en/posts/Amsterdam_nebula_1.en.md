@@ -1,5 +1,5 @@
 ---
-title: "  سديم امستردام 1  "
+title: "Amsterdam Nebula 1 "
 date: 2026-01-01
 translationKey: ""
 categories: ["others"]
@@ -9,19 +9,37 @@ draft: false
 
 
 
+# The Amsterdam Nebula
 
-قلة هي الطرق التي تذكر الخطوات،
-وقليلة تلك العيون التي تتذكر القسمات.
-كل شيء يبدو معبدا، حتى أنا.
+Few roads remember footsteps,
 
-الطرق المعبدة تحتاج الى مجنزرة تمر عليها حتى تحتفظ بشيء، أو لقطرات ماء.
-لا شيء يقاوم البلل، حتى افضل الملابس المقاومة للمطر في الطقس الهولندي.
+and few eyes remember faces.
 
-كدموع تلك العجوز الأسيوية في المترو. 
-كانت تحدث طفل في هاتفها، تضحك له، وترسم بيدها ورأسها مرحا ليضحك ذلك الطفل البعيد المرسوم على الشاشة الصغيرة.
-كنت بجوارها، أمرح في داخلي. أغلقت الهاتف بعد أن اومأت له بالوداع. وفي نفس اللحظة ضاعت ملامحها.
-كانت طفلا قبل قليل، وفي الثانية التي اغلق فيها الهاتف، ارتسمت كل السنين مرة واحدة على وجهها.
+Everything seems paved over, even me.
 
-قاومت ملامحها الوجع، ولكنها فشلت. وجهها كاد أن يتقطع، وكأن كل خلية فيه تشد الاخرى في الاتجاه المعاكس، حتى رطبت الدموع تلك الاخاديد.
-نزلت في المحطة القادمة، وكأنها هاربة. ربما من مشاعري هربت. غابت بسرعة في سديم الشتاء في تلك المحطة.
+Paved roads need a tracked machine to pass over them if they are to retain anything—or else a few drops of water.
+
+Nothing resists being wet, not even the finest rainproof clothing in Dutch weather.
+
+Like the tears of that elderly Asian woman on the metro.
+
+She was talking to a child on her phone, laughing at him, making playful gestures with her hands and head so that the distant child, drawn on that tiny screen, would laugh with her.
+
+I was sitting beside her, quietly amused.
+
+She ended the call and nodded goodbye to him.
+
+And in that same instant, her features disappeared.
+
+Only moments before, she had been a child. And in the second she closed the phone, all the years of her life appeared on her face at once.
+
+Her features fought the pain, but failed.
+
+Her face seemed almost to tear apart, as though every cell in it were pulling against the next in the opposite direction, until her tears moistened those furrows.
+
+She got off at the next station, as though she were fleeing.
+
+Perhaps she was fleeing from my feelings.
+
+She disappeared quickly into the winter nebula of that station.
 

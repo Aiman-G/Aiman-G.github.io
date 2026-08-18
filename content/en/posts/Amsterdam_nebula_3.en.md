@@ -1,5 +1,5 @@
 ---
-title: "  سديم امستردام 2  "
+title: " Amsterdam Nebula 3  "
 date: 2026-01-01
 translationKey: ""
 categories: ["others"]
@@ -7,13 +7,21 @@ tags: ["مبعثرات"]
 draft: false
 ---
 
-هناك جدار في امستردام سمع كل اللغات، راى كل الألوان، و اشتم كل عطر.
-لديه من البيانات عن البشر ما لا يعرفه اي مركز بيانات في العالم.
-في صباح يوم ما، مررت بجواره، فتوقف واستدرت وسألته:
-ماذا تعرف عني من من عبروا قبلي؟
-فرد علي:
-اذهب واحضر لي كروسون بالجنبة من البرت هاين،
-وكوب قهوة اولا يا احمق.
+# The Amsterdam Nebula III
+
+There is a wall in Amsterdam that has heard every language, seen every colour, and smelled every perfume.
+
+It has more data about human beings than any data centre in the world.
+
+One morning, I passed by it. I stopped, turned around, and asked:
+
+“What do you know about me from those who came before me?”
+
+It replied:
+
+“Go get me a ham-and-cheese croissant from Albert Heijn,
+
+and a cup of coffee first, you idiot.”
 
 
 
