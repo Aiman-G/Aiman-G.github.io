@@ -1,5 +1,5 @@
 ---
-title: "  سديم امستردام 2  "
+title: "  سديم امستردام 3  "
 date: 2026-01-01
 translationKey: ""
 categories: ["others"]
