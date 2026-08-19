@@ -1,6 +1,6 @@
 ---
 title: "The Amsterdam Nebula 4"
-description: "Everything is negotiable, except the kaascroissant 🥐"
+description: "🥐 Everything is negotiable, except the kaascroissant 🥐"
 translationKey: ""
 categories: ["others"]
 tags: ["Amsterdam", "Netherlands", "short story"]
