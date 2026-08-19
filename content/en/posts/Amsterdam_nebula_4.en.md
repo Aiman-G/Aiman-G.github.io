@@ -9,7 +9,7 @@ draft: false
 
 **Everything is negotiable, except the kaascroissant (cheese croissant).**
 
-I am not one of those who believe in conspiracy theories.
+
 
 On a beautiful summer morning, the sun seemed happy in Amsterdam, looking down upon our faces for the first time in a year.
 
