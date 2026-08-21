@@ -1,6 +1,6 @@
 ---
 title: "The Amsterdam Nebula 6"
-description: "What good are your wings when your foot is swollen?"
+description: "What good are your wings when your feet are wounded?"
 translationKey: ""
 categories: ["others"]
 tags: []
