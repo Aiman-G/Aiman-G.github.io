@@ -16,6 +16,8 @@ The story begins with a line written by a Dutchman on the wall of a church on th
 
 In it, he complained about why he could not return to the nest of the one he loved.
 
+" Alle vogels zijn aan hun nesten begonnen, behalve ik en jij. Waar wachten we nog op? "
+
 He carved the words with his fingernails and felt no pain.
 
 The pain inside him was stronger. Pain disappears inside pain, just as one shadow disappears into another.
