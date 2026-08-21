@@ -7,7 +7,7 @@ tags: ["مبعثرات"]
 draft: false
 ---
 
-# The Amsterdam Nebula III
+
 
 There is a wall in Amsterdam that has heard every language, seen every colour, and smelled every perfume.
 
