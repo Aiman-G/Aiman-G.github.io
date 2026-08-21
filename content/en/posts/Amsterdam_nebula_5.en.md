@@ -14,7 +14,7 @@ draft: false
 
 The story begins with a line written by a Dutchman on the wall of a church on the island across the water.
 
-In it, he complained to the Lord of the Seas about why he could not return to the nest of the one he loved.
+In it, he complained about why he could not return to the nest of the one he loved.
 
 He carved the words with his fingernails and felt no pain.
 
