@@ -8,7 +8,7 @@ draft: false
 ---
 
 
-# The Amsterdam Nebula II
+
 
 It seems to me that Amsterdam is made of many small islands, its body torn apart by canals that connect the two seas surrounding it from either side.
 
