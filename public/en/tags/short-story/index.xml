@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Short Story on Aiman</title>
+    <link>http://localhost:1313/en/tags/short-story/</link>
+    <description>Recent content in Short Story on Aiman</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/en/tags/short-story/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Amsterdam Nebula 4</title>
+      <link>http://localhost:1313/en/posts/amsterdam_nebula_4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/amsterdam_nebula_4/</guid>
+      <description>🥐 Everything is negotiable, except the kaascroissant 🥐</description>
+    </item>
+  </channel>
+</rss>

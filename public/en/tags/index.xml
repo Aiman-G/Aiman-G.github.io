@@ -72,10 +72,31 @@
       <description></description>
     </item>
     <item>
-      <title>Notes</title>
-      <link>http://localhost:1313/en/tags/notes/</link>
-      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/tags/notes/</guid>
+      <title>مبعثرات</title>
+      <link>http://localhost:1313/en/tags/%D9%85%D8%A8%D8%B9%D8%AB%D8%B1%D8%A7%D8%AA/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/tags/%D9%85%D8%A8%D8%B9%D8%AB%D8%B1%D8%A7%D8%AA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Amsterdam</title>
+      <link>http://localhost:1313/en/tags/amsterdam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/tags/amsterdam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Netherlands</title>
+      <link>http://localhost:1313/en/tags/netherlands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/tags/netherlands/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Short Story</title>
+      <link>http://localhost:1313/en/tags/short-story/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/tags/short-story/</guid>
       <description></description>
     </item>
   </channel>

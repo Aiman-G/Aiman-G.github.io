@@ -22,12 +22,5 @@
       <guid>http://localhost:1313/zh/posts/chinese-verbs-net/</guid>
       <description>一个交互式 Streamlit 应用：用网络科学与语音学友好的工具，把常见双字动词在汉字、声调与语义层面的连接关系可视化。</description>
     </item>
-    <item>
-      <title>生活呀</title>
-      <link>http://localhost:1313/zh/posts/non_tech_ch/</link>
-      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/non_tech_ch/</guid>
-      <description>&lt;p&gt;This my non tech blog in Chinese&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

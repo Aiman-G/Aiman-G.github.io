@@ -198,24 +198,47 @@
                 href="http://localhost:1313/en/tags/streamlit/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/posts/fear-is-sweet/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/en/posts/amsterdam_nebula_2/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh/posts/non_tech_ch/"
+                hreflang="ar"
+                href="http://localhost:1313/ar/posts/amsterdam_nebula_2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/posts/fear-is-sweet/"
+                href="http://localhost:1313/en/posts/amsterdam_nebula_2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/notes/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/en/posts/amsterdam_nebula_3/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/posts/amsterdam_nebula_3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/amsterdam_nebula_3/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/posts/amsterdam_nebula_1/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/posts/amsterdam_nebula_1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/amsterdam_nebula_1/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/categories/others/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
@@ -232,8 +255,31 @@
                 href="http://localhost:1313/en/categories/others/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/posts/testing-media/</loc>
+    <loc>http://localhost:1313/en/tags/%D9%85%D8%A8%D8%B9%D8%AB%D8%B1%D8%A7%D8%AA/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/tags/%D9%85%D8%A8%D8%B9%D8%AB%D8%B1%D8%A7%D8%AA/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/%D9%85%D8%A8%D8%B9%D8%AB%D8%B1%D8%A7%D8%AA/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/posts/fear-is-sweet/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/posts/fear-is-sweet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/fear-is-sweet/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/about/</loc>
     <xhtml:link
@@ -251,5 +297,29 @@
                 hreflang="en"
                 href="http://localhost:1313/en/about/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/amsterdam/</loc>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/netherlands/</loc>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/short-story/</loc>
+  </url><url>
+    <loc>http://localhost:1313/en/posts/amsterdam_nebula_4/</loc>
+  </url><url>
+    <loc>http://localhost:1313/en/posts/amsterdam_nebula_5/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/posts/amsterdam_nebula_5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/amsterdam_nebula_5/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/posts/amsterdam_nebula_6/</loc>
+  </url><url>
+    <loc>http://localhost:1313/en/posts/amsterdam_nebula_7/</loc>
   </url>
 </urlset>
