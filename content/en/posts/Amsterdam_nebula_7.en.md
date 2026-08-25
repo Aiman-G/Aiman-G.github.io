@@ -27,7 +27,7 @@ Both meanings have that thread that gives a stranger a sense of belonging.
 
 Day after day, when I go to other places and look at their Albert Heijns, I start to compare them to my Albert Heijn.
 
-My Albert Heijn is in Geldrop, and there is another Albert Heijn in the city center, less than 70 meters away. At their Albert Heijn, they have chicken rice, a delicious ready meal that my Albert Heijn doesn't have.
+My Albert Heijn is in a small town, and there is another Albert Heijn in the city center, less than 70 meters away. At their Albert Heijn, they have chicken rice, a delicious ready meal that my Albert Heijn doesn't have.
 
 That hurts me.
 
