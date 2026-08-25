@@ -1,6 +1,6 @@
 ---
 title: "The Amsterdam Nebula 7"
-description: "My Albert Hijn ?"
+description: "Your Albert Hijn?"
 translationKey: ""
 categories: ["others"]
 tags: []
