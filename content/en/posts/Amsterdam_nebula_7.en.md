@@ -51,4 +51,4 @@ When I open my ING app, I see:
  - &minus;AH
  - &minus;AH
 
-You know that a negative AH followed by some number,  looks like a blood type.
+You know that negative AH followed by some number,  looks like a blood type.
