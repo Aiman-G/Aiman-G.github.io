@@ -349,5 +349,19 @@
       <guid>http://localhost:1313/ar/posts/amsterdam_nebula_5/</guid>
       <description>الدموع البعيدة</description>
     </item>
+    <item>
+      <title>الصبر والتحمل والزمن في نظر الصيني</title>
+      <link>http://localhost:1313/ar/posts/chinese_patience_1.ar-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/posts/chinese_patience_1.ar-copy/</guid>
+      <description>الجزء والكل : الامتداد الاجتماعي هو امتداد زمني </description>
+    </item>
+    <item>
+      <title>الصبر والتحمل والزمن في نظر الصيني</title>
+      <link>http://localhost:1313/ar/posts/chinese_patience_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/posts/chinese_patience_1/</guid>
+      <description>الجزء والكل : الامتداد الاجتماعي هو امتداد زمني </description>
+    </item>
   </channel>
 </rss>

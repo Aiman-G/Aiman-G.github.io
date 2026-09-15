@@ -23,6 +23,7 @@ But this **“your”**—does it mean *your*, as my brain understood it?
 
 Or does it mean that I belong to that Albert Heijn?
 
+
 Both meanings have that thread that gives a stranger a sense of belonging.
 
 Day after day, when I go to other places and look at their Albert Heijns, I start to compare them to my Albert Heijn.

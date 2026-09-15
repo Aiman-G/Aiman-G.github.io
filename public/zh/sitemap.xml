@@ -207,6 +207,12 @@
                 href="http://localhost:1313/zh/posts/chinese-verbs-net/"
                 />
   </url><url>
+    <loc>http://localhost:1313/zh/tags/test/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zh/posts/non_tech_ch/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/zh/about/</loc>
     <xhtml:link
                 rel="alternate"
