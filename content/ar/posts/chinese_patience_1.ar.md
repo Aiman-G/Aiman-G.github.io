@@ -93,7 +93,10 @@ draft : false
        alt="كلمات متعلقة بالخصي في اللغة الصينية"
        style="max-width: 700px; width: 100%;">
   <figcaption>
-   بعض الكلمات في القاموس الصيني المتعلقة بالخصي. 
+
+  بعض الكلمات في القاموس الصيني المتعلقة بالخصي. 
+  [  رابط للقاموس مع الكلمة المستخدمة للبحث](https://www.mdbg.net/chinese/dictionary?page=worddict&email=&wdrst=0&wdqb=eunuch)
+     
   </figcaption>
 </figure>
 
