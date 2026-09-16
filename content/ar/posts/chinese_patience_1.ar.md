@@ -154,4 +154,4 @@ draft : false
 
 ## مراجع
 
-[1] : رابط المقال (https://www.gjrwls.com/people/20260603/1246859032975638528.html) 
+[1] : رابط المقال (https://www.gjrwls.com/people/20260709/1259927339995758592.html) 
