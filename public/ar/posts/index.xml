@@ -6,8 +6,15 @@
     <description>Recent content in المقالات on أيمن</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>ar</language>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/ar/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>الصبر والتحمل والزمن في نظر الصيني</title>
+      <link>http://localhost:1313/ar/posts/chinese_patience_1/</link>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/posts/chinese_patience_1/</guid>
+      <description>الجزء والكل : الامتداد الاجتماعي هو امتداد زمني </description>
+    </item>
     <item>
       <title>  سديم امستردام 1  </title>
       <link>http://localhost:1313/ar/posts/amsterdam_nebula_1/</link>
@@ -348,20 +355,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/posts/amsterdam_nebula_5/</guid>
       <description>الدموع البعيدة</description>
-    </item>
-    <item>
-      <title>الصبر والتحمل والزمن في نظر الصيني</title>
-      <link>http://localhost:1313/ar/posts/chinese_patience_1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ar/posts/chinese_patience_1/</guid>
-      <description>الجزء والكل : الامتداد الاجتماعي هو امتداد زمني </description>
-    </item>
-    <item>
-      <title>الصبر والتحمل والزمن في نظر الصيني</title>
-      <link>http://localhost:1313/ar/posts/chinese_patience_2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ar/posts/chinese_patience_2/</guid>
-      <description>فعل الإنتظار </description>
     </item>
   </channel>
 </rss>
