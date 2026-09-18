@@ -2,44 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ar/</loc>
-    <lastmod>2026-09-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/ar/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/ar/posts/</loc>
-    <lastmod>2026-09-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/ar/posts/"
-                />
+    <loc>http://localhost:1313/ar/posts/chinese_patience_2/</loc>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ar/categories/</loc>
-    <lastmod>2026-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -57,7 +24,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/ar/categories/others/</loc>
-    <lastmod>2026-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -72,6 +39,42 @@
                 rel="alternate"
                 hreflang="ar"
                 href="http://localhost:1313/ar/categories/others/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ar/</loc>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ar/posts/</loc>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/posts/"
                 />
   </url><url>
     <loc>http://localhost:1313/ar/posts/chinese_patience_1/</loc>
