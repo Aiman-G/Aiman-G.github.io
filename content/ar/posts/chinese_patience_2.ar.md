@@ -5,7 +5,7 @@ description: "فعل الإنتظار "
 translationKey: ""
 categories: ["others"]
 tags: []
-draft: false
+draft: true
 ---
 
 
