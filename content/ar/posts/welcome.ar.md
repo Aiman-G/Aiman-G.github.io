@@ -6,4 +6,5 @@ categories: ["tech"]
 tags: ["مقدمة"]
 draft: false
 ---
-خالية حاليا
+
+مرحبا بك. 
